@@ -1,1 +1,1 @@
-repositorip sistesis de redes activas
+repositorio sistesis de redes activas
