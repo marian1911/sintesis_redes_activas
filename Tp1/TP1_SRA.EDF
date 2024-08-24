@@ -1,0 +1,4377 @@
+
+(edif C__FACULTAD_MATERIAS__4TO_2DO_SINTESIS_DE_REDES_ACTIVAS_SINTESIS_REDES_ACTIVAS_TP1_TP1_SRA_EDF
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap
+    (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2024 8 24 20 55 23)
+      (program "cap2edif"
+        (version "Elgris Technologies, Inc. Schematic Writer version SPB 23.10_1.122 built Jul 26 2023"))
+      (author "Capture")
+      (dataOrigin "OrCAD Capture"
+        (version "SPB 23.10"))))
+  (library DEFAULT
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PIN
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup JUNCTION
+        (color 100 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup WIRE
+        (color 50 0 25)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup BUS
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup PAGEBORDER
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC"))))
+    (cell PIN_ZERO
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "symbolPort")
+        (owner "Schematic_TSC"))
+      (view PIN_ZERO
+        (viewType GRAPHIC)
+        (interface)))
+    (cell PIN_ZERO_INVIS
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "symbolPort")
+        (owner "Schematic_TSC"))
+      (view PIN_ZERO_INVIS
+        (viewType GRAPHIC)
+        (interface)))
+    (cell JUNCTION
+      (cellType TIE)
+      (view JUNCTION
+        (viewType SCHEMATIC)
+        (interface
+          (port FAKE_TIE_PORT)
+          (symbol
+            (figure
+              (figureGroupOverride JUNCTION
+                (color 100 0 0))
+              (circle
+                (pt 2 0)
+                (pt -2 0)))))))
+    (cell PAGE_BORDER_TEMPLATE
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "pageTemplate")
+        (owner "Schematic_TSC"))
+      (property ETCCELLTYPE
+        (string "pageBorder")
+        (owner "Electronic Tools Company"))
+      (view PAGE_BORDER_TEMPLATE
+        (viewType GRAPHIC)
+        (interface)
+        (userData backgroundColor
+          (color 100 100 100)
+          (owner "Electronic Tools Company"))
+        (contents
+          (figure
+            (figureGroupOverride PAGEBORDER
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -720)
+              (pt 970 0))))))
+    (cell PIN_SHORT
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "symbolPort")
+        (owner "Schematic_TSC"))
+      (view PIN_SHORT
+        (viewType GRAPHIC)
+        (interface)
+        (contents
+          (figure
+            (figureGroupOverride PIN
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (path
+              (pointList
+                (pt 0 0)
+                (pt 10 0)))))))
+    (cell BUS_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view BUS_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell NET_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view NET_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell BUSWIDE_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSWIDE_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell BUSTHIN_BTM_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSTHIN_BTM_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 10 0))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 -10)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 0)))))))))
+    (cell BUS_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view BUS_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10)))))))))
+    (cell NET_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view NET_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride WIRE
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false)))))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10)))))))))
+    (cell BUSWIDE_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSWIDE_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array BUNDLE 512))
+          (port
+            (array WIRE 512))
+          (joined
+            (portRef BUNDLE)
+            (portRef WIRE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10)))))))))
+    (cell BUSTHIN_TOP_LEFT_RIP
+      (cellType RIPPER)
+      (view BUSTHIN_TOP_LEFT_RIP
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (array WIRE 512))
+          (port
+            (array BUNDLE 512))
+          (joined
+            (portRef WIRE)
+            (portRef BUNDLE))
+          (symbol
+            (figure
+              (figureGroupOverride BUS
+                (fillPattern 1 1
+                  (boolean
+                    (boolean
+                      (false))))
+                (pathWidth 6))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 10 -10))))
+            (portImplementation WIRE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 0 0)))))
+            (portImplementation BUNDLE
+              (connectLocation
+                (figure PIN
+                  (dot
+                    (pt 10 -10))))))))))
+  (library CAPSYM
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup POWEROBJECT
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup TITLEBLOCK
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC"))))
+    (cell &0
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "pagePort")
+        (owner "Schematic_TSC"))
+      (view &0
+        (viewType GRAPHIC)
+        (interface)
+        (property
+          (rename PSPICEONLY "PSpiceOnly")
+          (string "TRUE"))
+        (property NODENAME
+          (string "0"))
+        (userData backgroundColor
+          (color 100 100 100)
+          (owner "Electronic Tools Company"))
+        (contents
+          (figure POWEROBJECT
+            (path
+              (pointList
+                (pt 0 0)
+                (pt 20 0))))
+          (figure POWEROBJECT
+            (path
+              (pointList
+                (pt 3 -3)
+                (pt 17 -3))))
+          (figure POWEROBJECT
+            (path
+              (pointList
+                (pt 14 -6)
+                (pt 6 -6))))
+          (figure POWEROBJECT
+            (path
+              (pointList
+                (pt 9 -9)
+                (pt 11 -9))))
+          (commentGraphics
+            (property NODENAME
+              (string
+                (stringDisplay "0"
+                  (display
+                    (figureGroupOverride DISPLAYPROPERTY
+                      (textHeight 11)
+                      (property TEXTWIDTH
+                        (integer 7)
+                        (owner "Schematic_TSC")))
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 16 -5))))))))))
+    (cell
+      (rename TITLEBLOCK0 "TitleBlock0")
+      (cellType GENERIC)
+      (property CELLTYPE
+        (string "pageTemplate")
+        (owner "Schematic_TSC"))
+      (property ETCCELLTYPE
+        (string "pageTitleBlock")
+        (owner "Electronic Tools Company"))
+      (view
+        (rename TITLEBLOCK0 "TitleBlock0")
+        (viewType GRAPHIC)
+        (interface)
+        (property
+          (rename PAGE_CREATE_DATE "Page Create Date")
+          (string "    March  8, 1995"))
+        (property
+          (rename DOC "Doc")
+          (string ""))
+        (property
+          (rename REVCODE "RevCode")
+          (string "?"))
+        (property
+          (rename TITLE "Title")
+          (string ""))
+        (property
+          (rename PAGE_SIZE "Page Size")
+          (string "A"))
+        (property
+          (rename PAGE_NUMBER "Page Number")
+          (string "1"))
+        (property
+          (rename PAGE_COUNT "Page Count")
+          (string "1"))
+        (property
+          (rename NAME "Name")
+          (string "TitleBlock0"))
+        (property
+          (rename PAGE_MODIFY_DATE "Page Modify Date")
+          (string ""))
+        (userData backgroundColor
+          (color 100 100 100)
+          (owner "Electronic Tools Company"))
+        (contents
+          (commentGraphics
+            (annotate
+              (stringDisplay "Title"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 0 -20)))))
+            (annotate
+              (stringDisplay "Size"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 0 -50)))))
+            (annotate
+              (stringDisplay "Document Number"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 40 -50)))))
+            (annotate
+              (stringDisplay "Rev"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 330 -50)))))
+            (annotate
+              (stringDisplay "Date:"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 0 -80)))))
+            (annotate
+              (stringDisplay "Sheet"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 200 -80)))))
+            (annotate
+              (stringDisplay "of"
+                (display
+                  (figureGroupOverride TITLEBLOCK
+                    (textHeight 9)
+                    (property TEXTWIDTH
+                      (integer 6)
+                      (owner "Schematic_TSC")))
+                  (justify UPPERLEFT)
+                  (origin
+                    (pt 280 -80)))))
+            (property
+              (rename DOC "Doc")
+              (string
+                (stringDisplay ""
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 40 -60))))))
+            (property
+              (rename REVCODE "RevCode")
+              (string
+                (stringDisplay "?"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 340 -60))))))
+            (property
+              (rename TITLE "Title")
+              (string
+                (stringDisplay ""
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 40 -30))))))
+            (property
+              (rename PAGE_SIZE "Page Size")
+              (string
+                (stringDisplay "A"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 10 -60))))))
+            (property
+              (rename PAGE_NUMBER "Page Number")
+              (string
+                (stringDisplay "1"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 250 -80))))))
+            (property
+              (rename PAGE_COUNT "Page Count")
+              (string
+                (stringDisplay "1"
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 310 -80))))))
+            (property
+              (rename PAGE_MODIFY_DATE "Page Modify Date")
+              (string
+                (stringDisplay ""
+                  (display DISPLAYPROPERTY
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 52 -80)))))))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -20)
+              (pt 360 0)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -50)
+              (pt 360 -20)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -80)
+              (pt 30 -50)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 30 -80)
+              (pt 330 -50)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 330 -80)
+              (pt 360 -50)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 0 -90)
+              (pt 200 -80)))
+          (figure
+            (figureGroupOverride TITLEBLOCK
+              (fillPattern 1 1
+                (boolean
+                  (boolean
+                    (false)))))
+            (rectangle
+              (pt 200 -90)
+              (pt 360 -80)))))))
+  (library SOURCE
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PARTBODY
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNUMBER
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNAME
+        (color 0 25 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTREFERENCE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PIN
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC"))))
+    (cell VDC
+      (cellType GENERIC)
+      (property
+        (rename SOURCE_PACKAGE "Source Package")
+        (string "VDC"))
+      (property
+        (rename NUMBER_DEVICES_IN_PACKAGE "Number devices in Package")
+        (string "1"))
+      (property
+        (rename POSITIONINPACKAGE "PositionInPackage")
+        (string ""))
+      (view
+        (rename VDC_NORMAL "VDC.Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (rename &_ "+")
+            (designator "0")
+            (property
+              (rename NAME "Name")
+              (string "+"))
+            (property FLOAT
+              (string "UniqueNet"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "0"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (port
+            (rename &__0 "-")
+            (designator "1")
+            (property
+              (rename NAME "Name")
+              (string "-"))
+            (property FLOAT
+              (string "UniqueNet"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "1"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (designator "V?")
+          (symbol
+            (property
+              (rename PSPICETEMPLATE "PSpiceTemplate")
+              (string "V^@REFDES %37%+ %37%- @DC"))
+            (property
+              (rename PSPICEONLY "PSpiceOnly")
+              (string "TRUE"))
+            (property DC
+              (string
+                (stringDisplay "0Vdc"
+                  (display
+                    (figureGroupOverride DISPLAYPROPERTY
+                      (textHeight 10)
+                      (property ETCFONTNAME
+                        (string "Arial Narrow")
+                        (owner "Electronic Tools Company")
+                        (property SUFFIX
+                          (string "def")))
+                      (property TEXTWIDTH
+                        (integer 7)
+                        (owner "Schematic_TSC")))
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt -20 -10))))))
+            (property
+              (rename PSPICE_MODEL_TYPE "PSpice Model Type")
+              (string "0011"))
+            (property
+              (rename VALUE "Value")
+              (string "VDC"))
+            (property
+              (rename IMPLEMENTATION "Implementation")
+              (string ""))
+            (property
+              (rename IMPLEMENTATION_TYPE "Implementation Type")
+              (string "PSpice Model"))
+            (property
+              (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+              (string "False"))
+            (property
+              (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+              (string "False"))
+            (property
+              (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+              (string "False"))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (portImplementation
+              (name &_
+                (display
+                  (figureGroupOverride PINNAME
+                    (visible
+                      (false)))
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 10 -6))))
+              (property FLOAT
+                (string "UniqueNet"))
+              (keywordDisplay designator
+                (display
+                  (figureGroupOverride PINNUMBER
+                    (visible
+                      (false)))
+                  (orientation R90)
+                  (origin
+                    (pt 10 8))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 10 0)))))
+            (portImplementation
+              (name &__0
+                (display
+                  (figureGroupOverride PINNAME
+                    (visible
+                      (false)))
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 10 -24))))
+              (property FLOAT
+                (string "UniqueNet"))
+              (keywordDisplay designator
+                (display
+                  (figureGroupOverride PINNUMBER
+                    (visible
+                      (false)))
+                  (justify LOWERRIGHT)
+                  (orientation R90)
+                  (origin
+                    (pt 10 -38))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 10 -40)
+                    (pt 10 -30))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 10 -40)))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 5 -17)
+                  (pt 15 -17))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 20 -20)
+                  (pt 0 -20))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 5 -24)
+                  (pt 15 -24))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 10 -9)
+                  (pt 10 -14))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 10 -30)
+                  (pt 10 -24))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 0 -14)
+                  (pt 20 -14))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 10 -10)
+                  (pt 10 0))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 3 -8)
+                  (pt 3 -10))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 2 -9)
+                  (pt 4 -9))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 2 -28)
+                  (pt 4 -28))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride PARTREFERENCE
+                  (textHeight 10)
+                  (property ETCFONTNAME
+                    (string "Arial Narrow")
+                    (owner "Electronic Tools Company")
+                    (property SUFFIX
+                      (string "def")))
+                  (property TEXTWIDTH
+                    (integer 7)
+                    (owner "Schematic_TSC")))
+                (justify UPPERLEFT)
+                (origin
+                  (pt 19 2)))))))))
+  (library ANALOG_P
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PARTBODY
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNUMBER
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNAME
+        (color 0 25 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTREFERENCE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PIN
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC"))))
+    (cell
+      (rename R "r")
+      (cellType GENERIC)
+      (property
+        (rename SOURCE_PACKAGE "Source Package")
+        (string "r"))
+      (property
+        (rename NUMBER_DEVICES_IN_PACKAGE "Number devices in Package")
+        (string "1"))
+      (property
+        (rename POSITIONINPACKAGE "PositionInPackage")
+        (string ""))
+      (view
+        (rename R_NORMAL "r.Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (port &2
+            (designator "2")
+            (property
+              (rename NAME "Name")
+              (string "2"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "2"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (port &1
+            (designator "1")
+            (property
+              (rename NAME "Name")
+              (string "1"))
+            (property
+              (rename TYPE "Type")
+              (string "PAS"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "1"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (designator "R?")
+          (symbol
+            (property
+              (rename PSPICETEMPLATE "PSpiceTemplate")
+              (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+            (property TOLERANCE
+              (string ""))
+            (property
+              (rename VALUE "Value")
+              (string
+                (stringDisplay "1k"
+                  (display
+                    (figureGroupOverride DISPLAYPROPERTY
+                      (textHeight 10)
+                      (property TEXTWIDTH
+                        (integer 7)
+                        (owner "Schematic_TSC")))
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 5 -15))))))
+            (property
+              (rename IMPLEMENTATION "Implementation")
+              (string ""))
+            (property
+              (rename IMPLEMENTATION_TYPE "Implementation Type")
+              (string "<none>"))
+            (property
+              (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+              (string "False"))
+            (property
+              (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+              (string "False"))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (portImplementation
+              (name &2
+                (display
+                  (figureGroupOverride PINNAME
+                    (visible
+                      (false)))
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 18 -10))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 28 -10))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 30 -10)
+                    (pt 20 -10))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 30 -10)))))
+            (portImplementation
+              (name &1
+                (display
+                  (figureGroupOverride PINNAME
+                    (visible
+                      (false)))
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -10))))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -10))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -10 -10)
+                    (pt 0 -10))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -10 -10)))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 12 -14)
+                  (pt 15 -6))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 1 -10)
+                  (pt 3 -6))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 3 -6)
+                  (pt 6 -14))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 6 -14)
+                  (pt 9 -6))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 9 -6)
+                  (pt 12 -14))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 0 -10)
+                  (pt 1 -10))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 15 -6)
+                  (pt 18 -14))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 18 -14)
+                  (pt 20 -10))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride PARTREFERENCE
+                  (textHeight 10)
+                  (property TEXTWIDTH
+                    (integer 7)
+                    (owner "Schematic_TSC")))
+                (justify UPPERLEFT)
+                (origin
+                  (pt 5 10)))))))))
+  (library OPAMP
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PARTBODY
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNUMBER
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNAME
+        (color 0 25 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTREFERENCE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PIN
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC"))))
+    (cell LM324
+      (cellType GENERIC)
+      (property
+        (rename SOURCE_PACKAGE "Source Package")
+        (string "LM324"))
+      (property
+        (rename NUMBER_DEVICES_IN_PACKAGE "Number devices in Package")
+        (string "4"))
+      (property
+        (rename POSITIONINPACKAGE "PositionInPackage")
+        (string "A,B,C,D"))
+      (view
+        (rename LM324_NORMAL "LM324.Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (port
+            (rename &_ "+")
+            (direction INPUT)
+            (designator "3")
+            (property
+              (rename NAME "Name")
+              (string "+"))
+            (property FLOAT
+              (string "Error"))
+            (property
+              (rename TYPE "Type")
+              (string "DBO_IN"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "3,5,10,12"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (port
+            (rename &__0 "-")
+            (direction INPUT)
+            (designator "2")
+            (property
+              (rename NAME "Name")
+              (string "-"))
+            (property FLOAT
+              (string "Error"))
+            (property
+              (rename TYPE "Type")
+              (string "DBO_IN"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "2,6,9,13"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (port
+            (rename V_ "V+")
+            (designator "4")
+            (property
+              (rename NAME "Name")
+              (string "V+"))
+            (property FLOAT
+              (string "Error"))
+            (property
+              (rename TYPE "Type")
+              (string "POWER"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "4,4,4,4"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string ""))
+            (property PORTTYPE
+              (string "supply")
+              (owner "Schematic_TSC"))
+            (property SUPPLYTYPE
+              (string "power")
+              (owner "Schematic_TSC"))
+            (property IMPLICITPORTCLASS
+              (string "N00399")
+              (owner "Schematic_TSC")))
+          (port
+            (rename V__0 "V-")
+            (designator "11")
+            (property
+              (rename NAME "Name")
+              (string "V-"))
+            (property FLOAT
+              (string "Error"))
+            (property
+              (rename TYPE "Type")
+              (string "POWER"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "11,11,11,11"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string ""))
+            (property PORTTYPE
+              (string "supply")
+              (owner "Schematic_TSC"))
+            (property SUPPLYTYPE
+              (string "power")
+              (owner "Schematic_TSC"))
+            (property IMPLICITPORTCLASS
+              (string "N00419")
+              (owner "Schematic_TSC")))
+          (port OUT
+            (direction OUTPUT)
+            (designator "1")
+            (property
+              (rename NAME "Name")
+              (string "OUT"))
+            (property FLOAT
+              (string "Error"))
+            (property
+              (rename TYPE "Type")
+              (string "DBO_OUT"))
+            (property
+              (rename PACKAGEPORTNUMBERS "PackagePortNumbers")
+              (string "1,7,8,14"))
+            (property
+              (rename BIASVALUE_CURRENT "BiasValue Current")
+              (string "")))
+          (designator "U?")
+          (symbol
+            (property
+              (rename PSPICETEMPLATE "PSpiceTemplate")
+              (string "X^@REFDES %37%+ %37%- %37%V+ %37%V- %37%OUT @MODEL"))
+            (property
+              (rename VALUE "Value")
+              (string
+                (stringDisplay "LM324"
+                  (display
+                    (figureGroupOverride DISPLAYPROPERTY
+                      (textHeight 10)
+                      (property TEXTWIDTH
+                        (integer 7)
+                        (owner "Schematic_TSC")))
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt -26 -60))))))
+            (property
+              (rename IMPLEMENTATION "Implementation")
+              (string "LM324"))
+            (property
+              (rename IMPLEMENTATION_TYPE "Implementation Type")
+              (string "PSpice Model"))
+            (property
+              (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+              (string "True"))
+            (property
+              (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+              (string "True"))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (portImplementation
+              (name &_
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -10))))
+              (property FLOAT
+                (string "Error"))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -10))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -10 -10)
+                    (pt 0 -10))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -10 -10)))))
+            (portImplementation
+              (name &__0
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (origin
+                    (pt 6 -50))))
+              (property FLOAT
+                (string "Error"))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (origin
+                    (pt -8 -50))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt -10 -50)
+                    (pt 0 -50))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt -10 -50)))))
+            (portImplementation
+              (name V_
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (orientation R90)
+                  (origin
+                    (pt 30 -6))))
+              (property FLOAT
+                (string "Error"))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (orientation R90)
+                  (origin
+                    (pt 30 8))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 30 0)))))
+            (portImplementation
+              (name V__0
+                (display PINNAME
+                  (justify CENTERLEFT)
+                  (orientation R90)
+                  (origin
+                    (pt 30 -54))))
+              (property FLOAT
+                (string "Error"))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (justify LOWERRIGHT)
+                  (orientation R90)
+                  (origin
+                    (pt 30 -68))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 30 -60)))))
+            (portImplementation
+              (name OUT
+                (display PINNAME
+                  (justify CENTERRIGHT)
+                  (origin
+                    (pt 58 -30))))
+              (property FLOAT
+                (string "Error"))
+              (keywordDisplay designator
+                (display PINNUMBER
+                  (origin
+                    (pt 68 -30))))
+              (figure
+                (figureGroupOverride PIN
+                  (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (false)))))
+                (path
+                  (pointList
+                    (pt 70 -30)
+                    (pt 60 -30))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 70 -30)))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 0 -60)
+                  (pt 60 -30))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 60 -30)
+                  (pt 0 0))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 30 -10)
+                  (pt 30 -15))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 30 -50)
+                  (pt 30 -45))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 0 -60))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 30 -10)
+                  (pt 30 0))))
+            (figure PARTBODY
+              (path
+                (pointList
+                  (pt 30 -50)
+                  (pt 30 -60))))
+            (keywordDisplay designator
+              (display
+                (figureGroupOverride PARTREFERENCE
+                  (textHeight 10)
+                  (property TEXTWIDTH
+                    (integer 7)
+                    (owner "Schematic_TSC")))
+                (justify UPPERLEFT)
+                (origin
+                  (pt 4 10)))))))))
+  (library TP1_SRA
+    (edifLevel 0)
+    (technology
+      (numberDefinition
+        (scale 1
+          (e 254 -6)
+          (unit DISTANCE))
+        (gridMap 1 1))
+      (figureGroup PARTBODY
+        (color 0 0 100)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 8)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 5)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNUMBER
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PINNAME
+        (color 0 25 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTREFERENCE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup PARTVALUE
+        (color 0 0 50)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup WIRE
+        (color 50 0 25)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 10)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 7)
+          (owner "Schematic_TSC")))
+      (figureGroup ALIAS
+        (color 100 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC")))
+      (figureGroup DISPLAYPROPERTY
+        (color 0 0 0)
+        (cornerType TRUNCATE)
+        (endType TRUNCATE)
+        (textHeight 9)
+        (pathWidth 0)
+        (fillPattern 1 1
+          (boolean
+            (boolean
+              (true))))
+        (property ETCFONTNAME
+          (string "Arial")
+          (owner "Electronic Tools Company")
+          (property SUFFIX
+            (string "def")))
+        (property TEXTWIDTH
+          (integer 6)
+          (owner "Schematic_TSC"))))
+    (cell SCHEMATIC1
+      (cellType GENERIC)
+      (view SCHEMATIC1_SCH
+        (viewType SCHEMATIC)
+        (interface
+          (port &0
+            (property IMPLICITPORTCLASS
+              (string "0")
+              (owner "Schematic_TSC"))
+            (property PORTTYPE
+              (string "supply")
+              (owner "Schematic_TSC"))))
+        (contents
+          (page PAGE1
+            (commentGraphics
+              (property
+                (rename OUTERBORDERMARGIN "OuterBorderMargin")
+                (point
+                  (pt 0 0)))
+              (property
+                (rename INNERBORDERMARGIN "InnerBorderMargin")
+                (point
+                  (pt 0 0)))
+              (property
+                (rename HORIZONTALLABELCOUNT "HorizontalLabelCount")
+                (integer 5))
+              (property
+                (rename HORIZONTALLABELWIDTH "HorizontalLabelWidth")
+                (integer 10))
+              (property
+                (rename VERTICALLABELCOUNT "VerticalLabelCount")
+                (integer 4))
+              (property
+                (rename VERTICALLABELWIDTH "VerticalLabelWidth")
+                (integer 10))
+              (property
+                (rename OUTERBORDERLINESTYLE "OuterBorderLineStyle")
+                (integer 0))
+              (property
+                (rename OUTERBORDERLINEWIDTH "OuterBorderLineWidth")
+                (integer 0))
+              (property
+                (rename INNERBORDERLINESTYLE "InnerBorderLineStyle")
+                (integer 0))
+              (property
+                (rename INNERBORDERLINEWIDTH "InnerBorderLineWidth")
+                (integer 0))
+              (property
+                (rename HORIZONTALSEPARATORLINESTYLE "HorizontalSeparatorLineStyle")
+                (integer 0))
+              (property
+                (rename HORIZONTALSEPARATORLINEWIDTH "HorizontalSeparatorLineWidth")
+                (integer 0))
+              (property
+                (rename VERTICALSEPARATORLINESTYLE "VerticalSeparatorLineStyle")
+                (integer 0))
+              (property
+                (rename VERTICALSEPARATORLINEWIDTH "VerticalSeparatorLineWidth")
+                (integer 0))
+              (property
+                (rename OUTERBORDERISVISIBLE "OuterBorderIsVisible")
+                (boolean
+                  (true)))
+              (property
+                (rename INNERBORDERISVISIBLE "InnerBorderIsVisible")
+                (boolean
+                  (false)))
+              (property
+                (rename HORIZONTALLABELISCHAR "HorizontalLabelIsChar")
+                (boolean
+                  (false)))
+              (property
+                (rename HORIZONTALLABELISVISIBLE "HorizontalLabelIsVisible")
+                (boolean
+                  (false)))
+              (property
+                (rename HORIZONTALLABELISASCENDING "HorizontalLabelIsAscending")
+                (boolean
+                  (false)))
+              (property
+                (rename VERTICALLABELISCHAR "VerticalLabelIsChar")
+                (boolean
+                  (true)))
+              (property
+                (rename VERTICALLABELISVISIBLE "VerticalLabelIsVisible")
+                (boolean
+                  (false)))
+              (property
+                (rename VERTICALLABELISASCENDING "VerticalLabelIsAscending")
+                (boolean
+                  (false)))
+              (property
+                (rename BORDERDISPLAYED "BorderDisplayed")
+                (boolean
+                  (true)))
+              (property
+                (rename BORDERPRINTED "BorderPrinted")
+                (boolean
+                  (true)))
+              (property
+                (rename GRIDREFDISPLAYED "GridRefDisplayed")
+                (boolean
+                  (true)))
+              (property
+                (rename GRIDREFPRINTED "GridRefPrinted")
+                (boolean
+                  (true)))
+              (property
+                (rename ANSIGRIDREFS "ANSIGridRefs")
+                (boolean
+                  (true)))
+              (property
+                (rename TITLEBLOCKDISPLAYED "TitleBlockDisplayed")
+                (boolean
+                  (true)))
+              (property
+                (rename TITLEBLOCKPRINTED "TitleBlockPrinted")
+                (boolean
+                  (true))))
+            (userData backgroundColor
+              (color 100 100 100)
+              (owner "Electronic Tools Company"))
+            (instance INS587
+              (viewRef VDC_NORMAL
+                (cellRef VDC
+                  (libraryRef SOURCE)))
+              (designator
+                (stringDisplay "V4"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 480 -65)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string ""))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "VDC"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "44.32nW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 480 -75))))))
+              (property DC
+                (string
+                  (stringDisplay "1Vdc"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 480 -101))))))
+              (property
+                (rename VALUE "Value")
+                (string "VDC"))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "PSpice Model"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "V^@REFDES %37%+ %37%- @DC"))
+              (property
+                (rename PSPICEONLY "PSpiceOnly")
+                (string "TRUE"))
+              (property
+                (rename PSPICE_MODEL_TYPE "PSpice Model Type")
+                (string "0011"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &_
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (orientation R270)
+                    (origin
+                      (pt 508 -90))))
+                (designator
+                  (stringDisplay "0"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (origin
+                        (pt 518 -90)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "44.32nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 540 -90)))))))
+              (portInstance
+                (name &__0
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (orientation R270)
+                    (origin
+                      (pt 486 -90))))
+                (designator
+                  (stringDisplay "1"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 472 -90)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "<BiasValue Current>"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 500 -90)))))))
+              (transform
+                (orientation R270)
+                (origin
+                  (pt 510 -80))))
+            (instance INS196
+              (viewRef R_NORMAL
+                (cellRef R
+                  (libraryRef ANALOG_P)))
+              (designator
+                (stringDisplay "R5"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 465 -170)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "AX/RC05"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "r"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "250.0uW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 465 -180))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "1k"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 465 -195))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+              (property TOLERANCE
+                (string ""))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &2
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 478 -190))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (origin
+                        (pt 488 -190)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "500.0uA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 490 -190)))))))
+              (portInstance
+                (name &1
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 466 -190))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 452 -190)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "<BiasValue Current>"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 450 -190)))))))
+              (transform
+                (origin
+                  (pt 460 -180))))
+            (instance INS180
+              (viewRef R_NORMAL
+                (cellRef R
+                  (libraryRef ANALOG_P)))
+              (designator
+                (stringDisplay "R4"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 285 -190)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "AX/RC05"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "r"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "249.6uW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 285 -200))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "1k"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 285 -215))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+              (property TOLERANCE
+                (string ""))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &2
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 298 -210))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (origin
+                        (pt 308 -210)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "499.6uA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 310 -210)))))))
+              (portInstance
+                (name &1
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 286 -210))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 272 -210))))))
+              (transform
+                (origin
+                  (pt 280 -200))))
+            (instance INS571
+              (viewRef VDC_NORMAL
+                (cellRef VDC
+                  (libraryRef SOURCE)))
+              (designator
+                (stringDisplay "V3"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 280 -65)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string ""))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "VDC"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "22.27nW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 280 -75))))))
+              (property DC
+                (string
+                  (stringDisplay "500mVdc"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 280 -101))))))
+              (property
+                (rename VALUE "Value")
+                (string "VDC"))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "PSpice Model"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "V^@REFDES %37%+ %37%- @DC"))
+              (property
+                (rename PSPICEONLY "PSpiceOnly")
+                (string "TRUE"))
+              (property
+                (rename PSPICE_MODEL_TYPE "PSpice Model Type")
+                (string "0011"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &_
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (orientation R270)
+                    (origin
+                      (pt 308 -90))))
+                (designator
+                  (stringDisplay "0"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (origin
+                        (pt 318 -90)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "44.53nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 340 -90)))))))
+              (portInstance
+                (name &__0
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (orientation R270)
+                    (origin
+                      (pt 286 -90))))
+                (designator
+                  (stringDisplay "1"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 272 -90))))))
+              (transform
+                (orientation R270)
+                (origin
+                  (pt 310 -80))))
+            (instance INS73
+              (viewRef LM324_NORMAL
+                (cellRef LM324
+                  (libraryRef OPAMP)))
+              (designator
+                (stringDisplay "U1B"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 544 -130)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "DIP10014W300L800"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "LM324"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "1"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string "B"))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "52.38mW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 544 -140))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "LM324"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 514 -200))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string "LM324"))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "PSpice Model"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "X^@REFDES %37%+ %37%- %37%V+ %37%V- %37%OUT @MODEL"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "True"))
+              (portInstance
+                (name &_
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 546 -150))))
+                (designator
+                  (stringDisplay "5"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 532 -150)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-44.32nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 530 -150)))))))
+              (portInstance
+                (name &__0
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 546 -190))))
+                (designator
+                  (stringDisplay "6"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 532 -190)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-44.92nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 530 -190)))))))
+              (portInstance
+                (name V_
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (orientation R90)
+                    (origin
+                      (pt 570 -146))))
+                (designator
+                  (stringDisplay "4"
+                    (display PINNUMBER
+                      (orientation R90)
+                      (origin
+                        (pt 570 -132)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "3.220mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 570 -140)))))))
+              (portInstance
+                (name V__0
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (orientation R90)
+                    (origin
+                      (pt 570 -194))))
+                (designator
+                  (stringDisplay "11"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (orientation R90)
+                      (origin
+                        (pt 570 -208)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-2.218mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 570 -200)))))))
+              (portInstance
+                (name OUT
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 598 -170))))
+                (designator
+                  (stringDisplay "7"
+                    (display PINNUMBER
+                      (origin
+                        (pt 608 -170)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-1.002mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 610 -170)))))))
+              (transform
+                (origin
+                  (pt 540 -140))))
+            (instance INS164
+              (viewRef R_NORMAL
+                (cellRef R
+                  (libraryRef ANALOG_P)))
+              (designator
+                (stringDisplay "R3"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 565 -220)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "AX/RC05"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "r"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "1.000mW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 565 -230))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "1k"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 565 -245))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+              (property TOLERANCE
+                (string ""))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &2
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 578 -240))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (origin
+                        (pt 588 -240)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "1.000mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 590 -240)))))))
+              (portInstance
+                (name &1
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 566 -240))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 552 -240)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "<BiasValue Current>"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 550 -240)))))))
+              (transform
+                (origin
+                  (pt 560 -230))))
+            (instance INS148
+              (viewRef R_NORMAL
+                (cellRef R
+                  (libraryRef ANALOG_P)))
+              (designator
+                (stringDisplay "R2"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 375 -240)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "AX/RC05"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "r"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "50.77pW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 375 -250))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "1k"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 375 -265))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+              (property TOLERANCE
+                (string ""))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &2
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 388 -260))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (origin
+                        (pt 398 -260)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "<BiasValue Current>"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 400 -260)))))))
+              (portInstance
+                (name &1
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 376 -260))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 362 -260)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "225.3nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 360 -260)))))))
+              (transform
+                (origin
+                  (pt 370 -250))))
+            (instance INS352
+              (viewRef VDC_NORMAL
+                (cellRef VDC
+                  (libraryRef SOURCE)))
+              (designator
+                (stringDisplay "V2"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 749 -323)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string ""))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "VDC"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "-49.36mW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 749 -333))))))
+              (property DC
+                (string
+                  (stringDisplay "10Vdc"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 739 -287))))))
+              (property
+                (rename VALUE "Value")
+                (string "VDC"))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "PSpice Model"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "V^@REFDES %37%+ %37%- @DC"))
+              (property
+                (rename PSPICEONLY "PSpiceOnly")
+                (string "TRUE"))
+              (property
+                (rename PSPICE_MODEL_TYPE "PSpice Model Type")
+                (string "0011"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &_
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (orientation R270)
+                    (origin
+                      (pt 758 -310))))
+                (designator
+                  (stringDisplay "0"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (origin
+                        (pt 768 -310))))))
+              (portInstance
+                (name &__0
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (orientation R270)
+                    (origin
+                      (pt 736 -310))))
+                (designator
+                  (stringDisplay "1"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 722 -310)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "4.936mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 750 -310)))))))
+              (transform
+                (orientation R270)
+                (origin
+                  (pt 760 -300))))
+            (instance INS336
+              (viewRef VDC_NORMAL
+                (cellRef VDC
+                  (libraryRef SOURCE)))
+              (designator
+                (stringDisplay "V1"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 730 -35)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string ""))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "VDC"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "-54.38mW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 730 -45))))))
+              (property DC
+                (string
+                  (stringDisplay "10Vdc"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 730 -71))))))
+              (property
+                (rename VALUE "Value")
+                (string "VDC"))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "PSpice Model"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "V^@REFDES %37%+ %37%- @DC"))
+              (property
+                (rename PSPICEONLY "PSpiceOnly")
+                (string "TRUE"))
+              (property
+                (rename PSPICE_MODEL_TYPE "PSpice Model Type")
+                (string "0011"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &_
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (orientation R90)
+                    (origin
+                      (pt 736 -60))))
+                (designator
+                  (stringDisplay "0"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 722 -60))))))
+              (portInstance
+                (name &__0
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (orientation R90)
+                    (origin
+                      (pt 758 -60))))
+                (designator
+                  (stringDisplay "1"
+                    (display
+                      (figureGroupOverride PINNUMBER
+                        (visible
+                          (false)))
+                      (origin
+                        (pt 768 -60)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "5.438mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 770 -80)))))))
+              (transform
+                (orientation R90)
+                (origin
+                  (pt 730 -70))))
+            (instance INS132
+              (viewRef R_NORMAL
+                (cellRef R
+                  (libraryRef ANALOG_P)))
+              (designator
+                (stringDisplay "R1"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 435 -280)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "AX/RC05"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "r"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "249.8uW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 435 -290))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "1k"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 435 -305))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+              (property TOLERANCE
+                (string ""))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &2
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 448 -300))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (origin
+                        (pt 458 -300)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "499.8uA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 460 -300)))))))
+              (portInstance
+                (name &1
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 436 -300))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 422 -300)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "<BiasValue Current>"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 420 -300)))))))
+              (transform
+                (origin
+                  (pt 430 -290))))
+            (instance INS494
+              (viewRef R_NORMAL
+                (cellRef R
+                  (libraryRef ANALOG_P)))
+              (designator
+                (stringDisplay "R6"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 716 -190)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "AX/RC05"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "r"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string ""))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "3.997uW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 716 -200))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "1000000"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 716 -202))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string ""))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "<none>"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "R^@REFDES %37%1 %37%2 ?TOLERANCE|R^@REFDES| @VALUE  ?TOLERANCE|\n.model r^@REFDES RES R=1 DEV=@TOLERANCE%37%|"))
+              (property TOLERANCE
+                (string ""))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "False"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "False"))
+              (portInstance
+                (name &2
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERRIGHT)
+                    (orientation R90)
+                    (origin
+                      (pt 700 -196))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (orientation R90)
+                      (origin
+                        (pt 700 -182)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "1.999uA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 700 -200)))))))
+              (portInstance
+                (name &1
+                  (display
+                    (figureGroupOverride PINNAME
+                      (visible
+                        (false)))
+                    (justify CENTERLEFT)
+                    (orientation R90)
+                    (origin
+                      (pt 700 -204))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (orientation R90)
+                      (origin
+                        (pt 700 -218))))))
+              (transform
+                (orientation R90)
+                (origin
+                  (pt 690 -210))))
+            (instance INS32
+              (viewRef LM324_NORMAL
+                (cellRef LM324
+                  (libraryRef OPAMP)))
+              (designator
+                (stringDisplay "U1A"
+                  (display PARTREFERENCE
+                    (justify UPPERLEFT)
+                    (origin
+                      (pt 416 -136)))))
+              (property
+                (rename PCB_FOOTPRINT "PCB Footprint")
+                (string "DIP10014W300L800"))
+              (property
+                (rename SOURCE_PACKAGE "Source Package")
+                (string "LM324"))
+              (property
+                (rename POSITIONINPACKAGE "PositionInPackage")
+                (string "0"))
+              (property
+                (rename DESIGNATOR "Designator")
+                (string "A"))
+              (property
+                (rename PRIMITIVE "Primitive")
+                (string "DEFAULT"))
+              (property
+                (rename BIASVALUE_POWER "BiasValue Power")
+                (string
+                  (stringDisplay "49.62mW"
+                    (display
+                      (figureGroupOverride DISPLAYPROPERTY
+                        (color 0 0 100))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 416 -146))))))
+              (property
+                (rename VALUE "Value")
+                (string
+                  (stringDisplay "LM324"
+                    (display PARTVALUE
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 416 -148))))))
+              (property
+                (rename IMPLEMENTATION "Implementation")
+                (string "LM324"))
+              (property
+                (rename IMPLEMENTATION_TYPE "Implementation Type")
+                (string "PSpice Model"))
+              (property
+                (rename POWER_PINS_VISIBLE "Power Pins Visible")
+                (string "False"))
+              (property
+                (rename PSPICETEMPLATE "PSpiceTemplate")
+                (string "X^@REFDES %37%+ %37%- %37%V+ %37%V- %37%OUT @MODEL"))
+              (property
+                (rename PIN_NUMBERS_VISIBLE "Pin Numbers Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_VISIBLE "Pin Names Visible")
+                (string "True"))
+              (property
+                (rename PIN_NAMES_ROTATE "Pin Names Rotate")
+                (string "True"))
+              (portInstance
+                (name &_
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 356 -170))))
+                (designator
+                  (stringDisplay "3"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 342 -170)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-44.53nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 340 -170)))))))
+              (portInstance
+                (name &__0
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (origin
+                      (pt 356 -210))))
+                (designator
+                  (stringDisplay "2"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (origin
+                        (pt 342 -210)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-44.93nA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 340 -210)))))))
+              (portInstance
+                (name V_
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (orientation R90)
+                    (origin
+                      (pt 380 -166))))
+                (designator
+                  (stringDisplay "4"
+                    (display PINNUMBER
+                      (orientation R90)
+                      (origin
+                        (pt 380 -152)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "2.218mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 380 -160)))))))
+              (portInstance
+                (name V__0
+                  (display PINNAME
+                    (justify CENTERLEFT)
+                    (orientation R90)
+                    (origin
+                      (pt 380 -214))))
+                (designator
+                  (stringDisplay "11"
+                    (display PINNUMBER
+                      (justify LOWERRIGHT)
+                      (orientation R90)
+                      (origin
+                        (pt 380 -228)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "-2.718mA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 380 -220)))))))
+              (portInstance
+                (name OUT
+                  (display PINNAME
+                    (justify CENTERRIGHT)
+                    (origin
+                      (pt 408 -190))))
+                (designator
+                  (stringDisplay "1"
+                    (display PINNUMBER
+                      (origin
+                        (pt 418 -190)))))
+                (property
+                  (rename BIASVALUE_CURRENT "BiasValue Current")
+                  (string
+                    (stringDisplay "500.3uA"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (color 100 0 0))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 420 -190)))))))
+              (transform
+                (origin
+                  (pt 350 -160))))
+            (net &0
+              (joined
+                (portRef &0)
+                (portRef &__0
+                  (instanceRef INS571))
+                (portRef &1
+                  (instanceRef INS180))
+                (portRef &__0
+                  (instanceRef INS587))
+                (portRef &_
+                  (instanceRef INS352))
+                (portRef &__0
+                  (instanceRef INS336))
+                (portRef &1
+                  (instanceRef INS494)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "0V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 255 -90))))))
+              (property
+                (rename BIASVALUE_VOLTAGE_1 "BiasValue Voltage_1")
+                (string
+                  (stringDisplay "0V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 260 -210))))))
+              (property
+                (rename BIASVALUE_VOLTAGE_2 "BiasValue Voltage_2")
+                (string
+                  (stringDisplay "0V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 445 -90))))))
+              (property
+                (rename BIASVALUE_VOLTAGE_3 "BiasValue Voltage_3")
+                (string
+                  (stringDisplay "0V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 780 -135))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 270 -90)
+                    (pt 240 -90)
+                    (pt 240 -120))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 270 -210)
+                    (pt 250 -210)
+                    (pt 250 -220))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 470 -90)
+                    (pt 420 -90)
+                    (pt 420 -110))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 760 -310)
+                    (pt 780 -310)
+                    (pt 780 -220)
+                    (pt 780 -210)
+                    (pt 810 -210)
+                    (pt 810 -250))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 770 -60)
+                    (pt 780 -60)
+                    (pt 780 -210))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 700 -220)
+                    (pt 780 -220))))
+              (instance JUNC_IMPL_5
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 780 -210))))
+              (instance JUNC_IMPL_6
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 780 -220)))))
+            (net N00224
+              (joined
+                (portRef &__0
+                  (instanceRef INS32))
+                (portRef &2
+                  (instanceRef INS180))
+                (portRef &1
+                  (instanceRef INS132))
+                (portRef &1
+                  (instanceRef INS148)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "499.6mV"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 375 -300))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 310 -210)
+                    (pt 330 -210)
+                    (pt 340 -210))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 420 -300)
+                    (pt 330 -300)
+                    (pt 330 -260)
+                    (pt 330 -210))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 360 -260)
+                    (pt 330 -260))))
+              (instance JUNC_IMPL
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 330 -210))))
+              (instance JUNC_IMPL_0
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 330 -260)))))
+            (net N00232
+              (joined
+                (portRef &1
+                  (instanceRef INS196))
+                (portRef OUT
+                  (instanceRef INS32))
+                (portRef &2
+                  (instanceRef INS148)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "499.4mV"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 430 -225))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 450 -190)
+                    (pt 430 -190)
+                    (pt 430 -260)
+                    (pt 400 -260))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 420 -190)
+                    (pt 430 -190))))
+              (instance JUNC_IMPL_1
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 430 -190)))))
+            (net N00236
+              (joined
+                (portRef &2
+                  (instanceRef INS132))
+                (portRef &2
+                  (instanceRef INS196))
+                (portRef &1
+                  (instanceRef INS164))
+                (portRef &__0
+                  (instanceRef INS73)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "1.000V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 510 -270))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 460 -300)
+                    (pt 510 -300)
+                    (pt 510 -240)
+                    (pt 550 -240))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 490 -190)
+                    (pt 510 -190)
+                    (pt 510 -240))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 510 -190)
+                    (pt 530 -190))))
+              (instance JUNC_IMPL_2
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 510 -190))))
+              (instance JUNC_IMPL_3
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 510 -240)))))
+            (net N00315
+              (joined
+                (portRef &2
+                  (instanceRef INS494))
+                (portRef OUT
+                  (instanceRef INS73))
+                (portRef &2
+                  (instanceRef INS164)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "1.999V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 650 -205))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 700 -180)
+                    (pt 700 -170)
+                    (pt 650 -170)
+                    (pt 650 -240)
+                    (pt 590 -240))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 610 -170)
+                    (pt 650 -170))))
+              (instance JUNC_IMPL_4
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 650 -170)))))
+            (net N00399
+              (joined
+                (portRef V_
+                  (instanceRef INS32))
+                (portRef &_
+                  (instanceRef INS336))
+                (portRef V_
+                  (instanceRef INS73)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "10.00V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 475 -60))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 730 -60)
+                    (pt 570 -60)
+                    (pt 380 -60)
+                    (pt 380 -160))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 570 -60)
+                    (pt 570 -140))))
+              (instance JUNC_IMPL_7
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 570 -60)))))
+            (net N00419
+              (joined
+                (portRef V__0
+                  (instanceRef INS32))
+                (portRef &__0
+                  (instanceRef INS352))
+                (portRef V__0
+                  (instanceRef INS73)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "-10.00V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 535 -280))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 380 -220)
+                    (pt 470 -220)
+                    (pt 470 -280)
+                    (pt 600 -280)
+                    (pt 600 -310)
+                    (pt 720 -310))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 600 -280)
+                    (pt 600 -200)
+                    (pt 570 -200))))
+              (instance JUNC_IMPL_8
+                (viewRef JUNCTION
+                  (cellRef JUNCTION
+                    (libraryRef DEFAULT)))
+                (transform
+                  (origin
+                    (pt 600 -280)))))
+            (net N00653
+              (joined
+                (portRef &_
+                  (instanceRef INS32))
+                (portRef &_
+                  (instanceRef INS571)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "500.0mV"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 340 -130))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 340 -170)
+                    (pt 340 -90)
+                    (pt 310 -90)))))
+            (net N00681
+              (joined
+                (portRef &_
+                  (instanceRef INS587))
+                (portRef &_
+                  (instanceRef INS73)))
+              (property
+                (rename BIASVALUE_VOLTAGE "BiasValue Voltage")
+                (string
+                  (stringDisplay "1.000V"
+                    (display
+                      (figureGroupOverride ALIAS
+                        (color 50 0 25))
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 530 -120))))))
+              (figure WIRE
+                (path
+                  (pointList
+                    (pt 510 -90)
+                    (pt 530 -90)
+                    (pt 530 -150)))))
+            (instance PAGE_BORDER
+              (viewRef PAGE_BORDER_TEMPLATE
+                (cellRef PAGE_BORDER_TEMPLATE
+                  (libraryRef DEFAULT))))
+            (portImplementation &0
+              (instance &0
+                (viewRef &0
+                  (cellRef &0
+                    (libraryRef CAPSYM)))
+                (property NODENAME
+                  (string
+                    (stringDisplay "0"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (textHeight 11)
+                          (property TEXTWIDTH
+                            (integer 7)
+                            (owner "Schematic_TSC")))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 256 -225))))))
+                (transform
+                  (origin
+                    (pt 240 -220))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 250 -220)))))
+            (portImplementation &0
+              (instance
+                (rename &0_0 "0")
+                (viewRef &0
+                  (cellRef &0
+                    (libraryRef CAPSYM)))
+                (property NODENAME
+                  (string
+                    (stringDisplay "0"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (textHeight 11)
+                          (property TEXTWIDTH
+                            (integer 7)
+                            (owner "Schematic_TSC")))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 816 -255))))))
+                (transform
+                  (origin
+                    (pt 800 -250))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 810 -250)))))
+            (portImplementation &0
+              (instance
+                (rename &0_1 "0")
+                (viewRef &0
+                  (cellRef &0
+                    (libraryRef CAPSYM)))
+                (property NODENAME
+                  (string
+                    (stringDisplay "0"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (textHeight 11)
+                          (property TEXTWIDTH
+                            (integer 7)
+                            (owner "Schematic_TSC")))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 246 -125))))))
+                (transform
+                  (origin
+                    (pt 230 -120))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 240 -120)))))
+            (portImplementation &0
+              (instance
+                (rename &0_2 "0")
+                (viewRef &0
+                  (cellRef &0
+                    (libraryRef CAPSYM)))
+                (property NODENAME
+                  (string
+                    (stringDisplay "0"
+                      (display
+                        (figureGroupOverride DISPLAYPROPERTY
+                          (textHeight 11)
+                          (property TEXTWIDTH
+                            (integer 7)
+                            (owner "Schematic_TSC")))
+                        (justify UPPERLEFT)
+                        (origin
+                          (pt 426 -115))))))
+                (transform
+                  (origin
+                    (pt 410 -110))))
+              (connectLocation
+                (figure PARTBODY
+                  (dot
+                    (pt 420 -110)))))
+            (instance
+              (rename TITLEBLOCK0 "TitleBlock0")
+              (viewRef TITLEBLOCK0
+                (cellRef TITLEBLOCK0
+                  (libraryRef CAPSYM)))
+              (property
+                (rename ORGADDR4 "OrgAddr4")
+                (string ""))
+              (property
+                (rename ORGADDR3 "OrgAddr3")
+                (string ""))
+              (property
+                (rename ORGADDR2 "OrgAddr2")
+                (string ""))
+              (property
+                (rename ORGADDR1 "OrgAddr1")
+                (string ""))
+              (property
+                (rename ORGNAME "OrgName")
+                (string ""))
+              (property
+                (rename CAGE_CODE "Cage Code")
+                (string ""))
+              (property
+                (rename REVCODE "RevCode")
+                (string
+                  (stringDisplay ""
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 930 -670))))))
+              (property
+                (rename NAME "Name")
+                (string "TitleBlock0"))
+              (property
+                (rename DESIGN_NAME "Design Name")
+                (string "TP1_SRA"))
+              (property
+                (rename DESIGN_FILE_NAME "Design File Name")
+                (string "C:\FACULTAD\MATERIAS--4TO-2DO\SINTESIS DE REDES ACTIVAS\SINTESIS_REDES_ACTIVAS\TP1\TP1_SRA.DSN"))
+              (property
+                (rename DESIGN_CREATE_DATE "Design Create Date")
+                (string "Saturday, August 24, 2024"))
+              (property
+                (rename DESIGN_MODIFY_DATE "Design Modify Date")
+                (string "Saturday, August 24, 2024"))
+              (property
+                (rename DESIGN_CREATE_TIME "Design Create Time")
+                (string "16:33:56"))
+              (property
+                (rename DESIGN_MODIFY_TIME "Design Modify Time")
+                (string "17:55:23"))
+              (property
+                (rename SCHEMATIC_NAME "Schematic Name")
+                (string "SCHEMATIC1"))
+              (property
+                (rename SCHEMATIC_CREATE_DATE "Schematic Create Date")
+                (string "Saturday, August 24, 2024"))
+              (property
+                (rename SCHEMATIC_MODIFY_DATE "Schematic Modify Date")
+                (string "Saturday, August 24, 2024"))
+              (property
+                (rename SCHEMATIC_CREATE_TIME "Schematic Create Time")
+                (string "16:33:58"))
+              (property
+                (rename SCHEMATIC_MODIFY_TIME "Schematic Modify Time")
+                (string "17:20:58"))
+              (property
+                (rename SCHEMATIC_PAGE_COUNT "Schematic Page Count")
+                (string "0"))
+              (property
+                (rename SCHEMATIC_PAGE_NUMBER "Schematic Page Number")
+                (string "0"))
+              (property
+                (rename PAGE_SIZE "Page Size")
+                (string
+                  (stringDisplay "A"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 600 -670))))))
+              (property
+                (rename PAGE_CREATE_DATE "Page Create Date")
+                (string "Saturday, August 24, 2024"))
+              (property
+                (rename PAGE_MODIFY_DATE "Page Modify Date")
+                (string
+                  (stringDisplay "Saturday, August 24, 2024"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 642 -690))))))
+              (property
+                (rename PAGE_CREATE_TIME "Page Create Time")
+                (string "16:33:56"))
+              (property
+                (rename PAGE_MODIFY_TIME "Page Modify Time")
+                (string "17:20:56"))
+              (property
+                (rename LOCATION_X_COORDINATE "Location X-Coordinate")
+                (string "590"))
+              (property
+                (rename LOCATION_Y_COORDINATE "Location Y-Coordinate")
+                (string "610"))
+              (property
+                (rename COLOR "Color")
+                (string "Default"))
+              (property
+                (rename SOURCE_LIBRARY "Source Library")
+                (string "C:\CADENCE\SPB_23.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB"))
+              (property
+                (rename SOURCE_SYMBOL "Source Symbol")
+                (string "TitleBlock0"))
+              (property
+                (rename PAGE_NAME "Page Name")
+                (string "PAGE1"))
+              (property
+                (rename DOC "Doc")
+                (string
+                  (stringDisplay ""
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 630 -670))))))
+              (property
+                (rename TITLE "Title")
+                (string
+                  (stringDisplay ""
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 630 -640))))))
+              (property
+                (rename PAGE_NUMBER "Page Number")
+                (string
+                  (stringDisplay "1"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 840 -690))))))
+              (property
+                (rename PAGE_COUNT "Page Count")
+                (string
+                  (stringDisplay "1"
+                    (display DISPLAYPROPERTY
+                      (justify UPPERLEFT)
+                      (origin
+                        (pt 900 -690))))))
+              (transform
+                (origin
+                  (pt 590 -610))))
+            (boundingBox
+              (rectangle
+                (pt 0 -720)
+                (pt 970 0)))
+            (pageSize
+              (rectangle
+                (pt 0 -720)
+                (pt 970 0))))))))
+  (design SCHEMATIC1
+    (cellRef SCHEMATIC1
+      (libraryRef TP1_SRA))))

@@ -1,0 +1,26 @@
+Importer Log Report
+Project : TP1_SRA.PrjPcb
+
+Section : Document - C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp1\TP1_SRA.DSN
+
+    Section : Importing Sheet - PAGE1.SchDoc
+        Warning : Power Port of type 0 at (2600mil,4900mil) was replaced with Arrow style port
+        Warning : Power Port of type 0 at (8200mil,4600mil) was replaced with Arrow style port
+        Warning : Power Port of type 0 at (2500mil,5900mil) was replaced with Arrow style port
+        Warning : Power Port of type 0 at (4300mil,6000mil) was replaced with Arrow style port
+        Warning : Junction at (5200mil,5200mil) has been removed. It will be automatically calculated.
+        Warning : Junction at (5200mil,4700mil) has been removed. It will be automatically calculated.
+        Warning : Junction at (3400mil,4500mil) has been removed. It will be automatically calculated.
+        Warning : Junction at (5800mil,6500mil) has been removed. It will be automatically calculated.
+        Warning : Junction at (6100mil,4300mil) has been removed. It will be automatically calculated.
+        Warning : Junction at (7900mil,5000mil) has been removed. It will be automatically calculated.
+        Warning : Junction at (7900mil,4900mil) has been removed. It will be automatically calculated.
+    EndSection
+
+    Section : Importing PSpice Models
+        Error   : PSpice model not found "LM324"
+    EndSection
+
+    Section : Importing PSpice Simulation Profiles
+    EndSection
+EndSection

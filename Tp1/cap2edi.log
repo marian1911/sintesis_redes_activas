@@ -1,0 +1,23 @@
+
+Copyright (c) 2006-2023, Elgris Technologies, Inc.
+
+OrCAD Capture to EDIF 2 0 0 Schematic Conversion Program SPB 23.10_1.122 built Jul 26 2023
+
+Started on Sat Aug 24 17:55:23 2024
+
+Reading config file c:\cadence\spb_23.1\tools\capture\cap2edi.cfg
+
+orcadread :Converting file C:\FACULTAD\MATERIAS--4TO-2DO\SINTESIS DE REDES ACTIVAS\SINTESIS_REDES_ACTIVAS\TP1\TP1_SRA.DSN 
+Converting SchematicView   SCHEMATIC1 
+	Converting elements on  page PAGE1
+		Converting Parts
+		converting Globals of Page PAGE1 of SchematicView SCHEMATIC1
+		Converting Buses and Nets of Schematic View SCHEMATIC1 
+
+Writing EDIF: C:\FACULTAD\MATERIAS--4TO-2DO\SINTESIS DE REDES ACTIVAS\SINTESIS_REDES_ACTIVAS\TP1\TP1_SRA.EDF
+
+
+Finished on Sat Aug 24 17:55:23 2024
+
+
+0 errors detected, 0 warnings detected

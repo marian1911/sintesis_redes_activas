@@ -1,0 +1,4 @@
+LTspice 24.0.12 for Windows
+Circuit: ("FILE_TYPE" "PMAP File"
+Start Time: Sat Aug 24 17:51:34 2024
+Fatal Error: Unknown SPICE device type "(" in "("devices""

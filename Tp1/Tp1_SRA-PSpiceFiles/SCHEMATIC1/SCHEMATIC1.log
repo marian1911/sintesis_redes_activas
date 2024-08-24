@@ -1,0 +1,5 @@
+LTspice 24.0.12 for Windows
+Circuit: * source TP1_SRA
+Start Time: Sat Aug 24 17:41:24 2024
+Fatal Error: Unknown subcircuit called in:
+   x_u1a n00653 n00224 n00399 n00419 n00232 lm324

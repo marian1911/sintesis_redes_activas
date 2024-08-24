@@ -1,0 +1,4 @@
+LTspice 24.0.12 for Windows
+Circuit: *
+Start Time: Sat Aug 24 17:56:09 2024
+Fatal Error: Unknown SPICE device type "(" in "(edif c__facultad_materias__4to_2do_sintesis_de_redes_activas_sintesis_redes_activas_tp1_tp1_sra_edf"
