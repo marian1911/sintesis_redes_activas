@@ -1,0 +1,35 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp1\LTspice_archivos\Draft3.asc
+Start Time: Sun Aug 25 19:15:59 2024
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+vernier = 0.5
+vernier = 0.666667
+Gmin = 4.6652e-06
+vernier = 0.888888
+Gmin = 7.9138e-07
+vernier = 1
+Gmin = 8.6905e-08
+Gmin = 9.33136e-09
+Gmin = 1.00195e-09
+Gmin = 1.07583e-10
+Gmin = 1.15517e-11
+Gmin = 1.24035e-12
+Gmin = 1.33182e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.374 seconds.
+
