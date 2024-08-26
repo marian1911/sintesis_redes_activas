@@ -1,5 +1,5 @@
 
-**** 08/25/24 17:44:47 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 08/25/24 18:11:22 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra-pspicefiles\schematic1\sim.sim ] 
 
@@ -39,15 +39,15 @@ R_R3         N00236 V02  1k
 R_R4         0 N00224  1k  
 R_R5         V01 N00236  1k  
 R_R6         0 V02  1meg  
-V_V1         N00655 0 3V
-V_V2         N03639 0 0.5V
+V_V1         N00655 0 2V
+V_V2         N03639 0 4V
 V_V+         N03137 0 10Vdc
 V_V-         0 N03151 10Vdc
 
 **** RESUMING sim.cir ****
 .END
 
-**** 08/25/24 17:44:47 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 08/25/24 18:11:22 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra-pspicefiles\schematic1\sim.sim ] 
 
@@ -66,7 +66,7 @@ V_V-         0 N03151 10Vdc
          CJO                   10.000000E-12                   10.000000E-12 
 
 
-**** 08/25/24 17:44:47 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 08/25/24 18:11:22 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra-pspicefiles\schematic1\sim.sim ] 
 
@@ -104,7 +104,7 @@ V_V-         0 N03151 10Vdc
            D     .52             .52         
 
 
-**** 08/25/24 17:44:47 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 08/25/24 18:11:22 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra-pspicefiles\schematic1\sim.sim ] 
 
@@ -131,7 +131,7 @@ V_V-         0 N03151 10Vdc
         IOFF   -1.000000E-06    0               0              -1.000000E-06 
 
 
-**** 08/25/24 17:44:47 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 08/25/24 18:11:22 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra-pspicefiles\schematic1\sim.sim ] 
 
@@ -146,41 +146,41 @@ V_V-         0 N03151 10Vdc
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  V01)    8.4914  (  V02)   -9.9759  (N00224)    2.9988 (N00236)     .5048     
+(  V01)    1.9990  (  V02)    7.9971  (N00224)    1.9992 (N00236)    3.9984     
 
-(N00655)    3.0000 (N03137)   10.0000 (N03151)  -10.0000 (N03639)     .5000     
+(N00655)    2.0000 (N03137)   10.0000 (N03151)  -10.0000 (N03639)    4.0000     
 
-(X_U1A.6)    -.0018                   (X_U1A.7)    9.1654                       
+(X_U1A.6)-348.2E-06                   (X_U1A.7)    1.8990                       
 
-(X_U1A.8)    9.1654                   (X_U1A.9)    0.0000                       
+(X_U1A.8)    1.8990                   (X_U1A.9)    0.0000                       
 
-(X_U1A.a)    9.9865                   (X_U1A.b)    -.0135                       
+(X_U1A.a)     .0020                   (X_U1A.b)   -9.9980                       
 
-(X_U1B.6)     .0964                   (X_U1B.7)  -11.4980                       
+(X_U1B.6)    -.0016                   (X_U1B.7)    8.1975                       
 
-(X_U1B.8)  -11.4980                   (X_U1B.9)    0.0000                       
+(X_U1B.8)    8.1975                   (X_U1B.9)    0.0000                       
 
-(X_U1B.a)     .0304                   (X_U1B.b)   -9.9696                       
+(X_U1B.a)    9.9960                   (X_U1B.b)    -.0040                       
 
-(X_U1A.10)    3.6064                  (X_U1A.11)   -9.9603                      
+(X_U1A.10)    2.6068                  (X_U1A.11)   -9.9603                      
 
-(X_U1A.12)   -9.9615                  (X_U1A.13)    3.5926                      
+(X_U1A.12)   -9.9612                  (X_U1A.13)    2.5930                      
 
-(X_U1A.14)    3.5930                  (X_U1A.53)    8.5000                      
+(X_U1A.14)    2.5933                  (X_U1A.53)    8.5000                      
 
-(X_U1A.54)   -9.1780                  (X_U1A.90)   13.4790                      
+(X_U1A.54)   -9.1780                  (X_U1A.90)   -1.9997                      
 
 (X_U1A.91)   40.0000                  (X_U1A.92)  -40.0000                      
 
-(X_U1A.99)    0.0000                  (X_U1B.10)    1.1099                      
+(X_U1A.99)    0.0000                  (X_U1B.10)    4.6061                      
 
-(X_U1B.11)   -9.9628                  (X_U1B.12)   -9.9581                      
+(X_U1B.11)   -9.9604                  (X_U1B.12)   -9.9619                      
 
-(X_U1B.13)    1.0969                  (X_U1B.14)    1.0952                      
+(X_U1B.13)    4.5922                  (X_U1B.14)    4.5928                      
 
 (X_U1B.53)    8.5000                  (X_U1B.54)   -9.1780                      
 
-(X_U1B.90)  -30.4460                  (X_U1B.91)   40.0000                      
+(X_U1B.90)    4.0067                  (X_U1B.91)   40.0000                      
 
 (X_U1B.92)  -40.0000                  (X_U1B.99)    0.0000                  
 
@@ -190,30 +190,30 @@ V_V-         0 N03151 10Vdc
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1         4.347E-08
-    V_V2         4.742E-08
-    V_V+        -1.792E-02
-    V_V-        -1.493E-02
-    X_U1A.vb    -1.794E-08
-    X_U1A.vc     8.803E-15
-    X_U1A.ve     1.893E-11
-    X_U1A.vlim   1.348E-02
-    X_U1A.vlp   -2.652E-11
-    X_U1A.vln   -5.348E-11
-    X_U1B.vb     9.636E-07
-    X_U1B.vc     1.848E-11
-    X_U1B.ve    -1.996E-02
-    X_U1B.vlim  -3.045E-02
-    X_U1B.vlp   -7.045E-11
-    X_U1B.vln   -9.558E-12
+    V_V1         4.392E-08
+    V_V2         4.307E-08
+    V_V+        -8.443E-03
+    V_V-        -6.435E-03
+    X_U1A.vb    -3.482E-09
+    X_U1A.vc     6.502E-12
+    X_U1A.ve     1.243E-11
+    X_U1A.vlim  -2.000E-03
+    X_U1A.vlp   -4.200E-11
+    X_U1A.vln   -3.800E-11
+    X_U1B.vb    -1.565E-08
+    X_U1B.vc     5.037E-13
+    X_U1B.ve     1.843E-11
+    X_U1B.vlim   4.007E-03
+    X_U1B.vlp   -3.599E-11
+    X_U1B.vln   -4.401E-11
 
-    TOTAL POWER DISSIPATION   3.45E-01  WATTS
+    TOTAL POWER DISSIPATION   1.49E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 08/25/24 17:44:47 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 08/25/24 18:11:22 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra-pspicefiles\schematic1\sim.sim ] 
 
@@ -225,5 +225,5 @@ V_V-         0 N03151 10Vdc
 
 
 
-  Total job time (using Solver 1)   =         .02
+  Total job time (using Solver 1)   =         .03
 

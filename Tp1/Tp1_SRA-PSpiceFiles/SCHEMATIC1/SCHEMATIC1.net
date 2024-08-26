@@ -7,7 +7,7 @@ R_R3         N00236 V02  1k
 R_R4         0 N00224  1k  
 R_R5         V01 N00236  1k  
 R_R6         0 V02  1meg  
-V_V1         N00655 0 3V
-V_V2         N03639 0 0.5V
+V_V1         N00655 0 2V
+V_V2         N03639 0 4V
 V_V+         N03137 0 10Vdc
 V_V-         0 N03151 10Vdc
