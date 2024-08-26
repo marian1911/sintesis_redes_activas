@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  25 AUG 2024 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  25 AUG 2024 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -132,23 +132,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Imagenes/cir1.png, id=10, 589.4522pt x 277.78781pt>
-File: Imagenes/cir1.png Graphic file (type png)
-<use Imagenes/cir1.png>
-Package pdftex.def Info: Imagenes/cir1.png  used on input line 48.
-(pdftex.def)             Requested size: 390.0pt x 183.79404pt.
+<Simulaciones-Resultados/Circuito1_esquematico.png, id=10, 820.86674pt x 454.69
+875pt>
+File: Simulaciones-Resultados/Circuito1_esquematico.png Graphic file (type png)
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2]
+<use Simulaciones-Resultados/Circuito1_esquematico.png>
+Package pdftex.def Info: Simulaciones-Resultados/Circuito1_esquematico.png  use
+d on input line 48.
+(pdftex.def)             Requested size: 390.0pt x 216.03271pt.
+ [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 57.
- [3 <./Imagenes/cir1.png>] [4] (informe_tp1.aux
+ [3 <./Simulaciones-Resultados/Circuito1_esquematico.png>] [4]
+<Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png, id=27, 1154.51324pt x 5
+10.708pt>
+File: Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png Graphic file (type 
+png)
+<use Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png>
+Package pdftex.def Info: Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png 
+ used on input line 155.
+(pdftex.def)             Requested size: 390.0pt x 172.51625pt.
+ [5 <./Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png>] (informe_tp1.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -158,10 +166,10 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2767 strings out of 474486
- 46154 string characters out of 5753570
+ 2780 strings out of 474486
+ 47203 string characters out of 5753570
  1931542 words of memory out of 5000000
- 25069 multiletter control sequences out of 15000+600000
+ 25082 multiletter control sequences out of 15000+600000
  563879 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,314b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -174,9 +182,9 @@ lic/amsfonts/cm/cmr10.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/
 cm/cmr12.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 <D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/Prog
 rama latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on informe_tp1.pdf (4 pages, 130172 bytes).
+Output written on informe_tp1.pdf (5 pages, 153125 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

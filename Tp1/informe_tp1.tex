@@ -43,11 +43,11 @@
 		Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida.
 		
 		En esta sección se analiza el siguiente circuito.
-		\begin{figure}[h!]
+		\begin{figure}
 			\centering
-			\includegraphics[width=1\linewidth]{Imagenes/cir1}
+			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_esquematico}
 			\caption{Amplificador diferencial}
-			\label{fig:cir1}
+			\label{fig:circuito1esquematico}
 		\end{figure} \newpage
 		
 		\subsection{Análisis del circuito}
@@ -118,10 +118,49 @@
 			R_1=R_3=R_5=R 
 		\end{equation}
 		
-		La salida de $V_{01}$ resulta:
+		La salida de $V_{02}$ resulta:
 		\begin{equation}
 			V_{02}=3\,V_2
 		\end{equation}
+		
+		Para $V_2=0$ y $V_{01}=0$  tenemos una configuración inversora de $R_3$ sobre $R_4$
+		\begin{equation}
+			V_{02}=-\frac{R_3 \,V_1 }{R_4 }
+		\end{equation}
+		
+		Normalizando los valores de la resistencia obtenemos:
+		\begin{equation}
+			R_3=R_4=R 
+		\end{equation}
+		
+		La salida de $V_{02}$ resulta:
+		\begin{equation}
+			V_{02}=-V_1
+		\end{equation}
+		
+		La salida de $V_{02}$ resulta la suma de los tres efectos, se obtiene:
+		\begin{equation}
+			V_{02}=3\,V_2-V_1-V_{01}
+		\end{equation}
+		
+		Reemplazando (7) en la ecuación anterior, se obtiene la respuesta total del circuito
+		\begin{equation}
+			V_{02}=4\,(V_2-V_1)
+		\end{equation}
+		
+		\subsection{Simulación en SPICE}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc)}
+			\caption{Tensión en modo común}
+			\label{fig:circuito1vo1vc-vo2vc}
+		\end{figure} \newpage
+		
+		
+		
+		
+		
 		
 		
 		
