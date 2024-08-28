@@ -1,6 +1,6 @@
 (ExpressProject "Tp1_SRA"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1 P001 (4147275)  [9/30/2023]-[08/25/24]")
+  (SoftwareVersion "23.1 P001 (4147275)  [9/30/2023]-[08/28/24]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -66,7 +66,7 @@
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "Design Resources"
          "D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp1\tp1_sra.dsn"
-         "SCHEMATIC1" "PAGE1"))
+         "SCHEMATIC1" "PAGE2"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -77,10 +77,21 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 784")
-        (Scroll "-256 0")
-        (Zoom "116")
+        (Scroll "-338 -7")
+        (Zoom "99")
         (Occurrence "/"))
       (Path
          "D:\GD\SINTESIS DE REDES ACTIVAS\SINTESIS_REDES_ACTIVAS\TP1\TP1_SRA.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 784")
+        (Scroll "-270 0")
+        (Zoom "113")
+        (Occurrence "/"))
+      (Path
+         "D:\GD\SINTESIS DE REDES ACTIVAS\SINTESIS_REDES_ACTIVAS\TP1\TP1_SRA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2"))))

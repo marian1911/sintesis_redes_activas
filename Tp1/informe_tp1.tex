@@ -2,7 +2,7 @@
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 
-\title{Síntesis de redes activas laboratorio Nº1: Amplificadores ideales lineales y no lineales}
+\title{Síntesis de redes activas \\ Laboratorio Nº1: Amplificadores ideales lineales y no lineales}
 
 \author{Profesor Titular: Dr. Ing. Pablo Ferreyra \\  Profesor Adjunto: Ing. César Reale \\ Alumnos: Campos Mariano, 
 		Enzo Verstraete}
@@ -28,19 +28,20 @@
 		G. Presentar un informe digital, bien redactado en LÁTEX, inicializado con la propuesta del
 		problema presentado por la Cátedra, los responsables del trabajo y un análisis profesional de
 		cada ítem. La redacción debe ser acorde a un informe de un futuro ingeniero.
-		
+	
+	\section{Introducción al análisis}
+	
+	El análisis del	circuito tiene como objetivo obtener una primera aproximación del comportamiento
+	del circuito de manera rápida y eficiente. Para dicho análisis se tienen en cuenta las siguientes
+	consideraciones.
+	
+	Ganancia infinita: Al considerar una ganancia infinita, la diferencia de tensión entre las entradas inversora y no inversora se hace prácticamente cero. Esto permite aplicar el concepto de "masa virtual" en la entrada inversora, simplificando notablemente el análisis.
+	
+	Impedancia de entrada infinita: La alta impedancia de entrada implica que prácticamente no circula corriente hacia las entradas del operacional, lo que facilita la aplicación de la Ley de Kirchhoff de las Corrientes (KCL) en los nodos de entrada.
+	
+	Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida.
+	
 	\section{Circuito I: Amplificador diferencial}
-		\subsection{Introducción al análisis}
-		
-		El análisis del	circuito tiene como objetivo obtener una primera aproximación del comportamiento
-		del circuito de manera rápida y eficiente. Para dicho análisis se tienen en cuenta las siguientes
-		consideraciones.
-		
-		Ganancia infinita: Al considerar una ganancia infinita, la diferencia de tensión entre las entradas inversora y no inversora se hace prácticamente cero. Esto permite aplicar el concepto de "masa virtual" en la entrada inversora, simplificando notablemente el análisis.
-		
-		Impedancia de entrada infinita: La alta impedancia de entrada implica que prácticamente no circula corriente hacia las entradas del operacional, lo que facilita la aplicación de la Ley de Kirchhoff de las Corrientes (KCL) en los nodos de entrada.
-		
-		Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida.
 		
 		En esta sección se analiza el siguiente circuito.
 		\begin{figure}
@@ -48,7 +49,7 @@
 			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_esquematico}
 			\caption{Amplificador diferencial}
 			\label{fig:circuito1esquematico}
-		\end{figure} \newpage
+		\end{figure} \\
 		
 		\subsection{Análisis del circuito}
 		Para el análisis podemos hacer uso de la propiedad de superposición, considerando la salida como la suma de los
@@ -71,9 +72,9 @@
 			V_{01}=3\,V_1
 		\end{equation}
 		
-		Para $V_1=0$ tenemos que
+		Para $V_1=0$ queda un amplificador inversor de $R_2$ sobre $R_1$ 
 		\begin{equation}
-			V_{01} = -\frac{R_2 \,V_2 }{R_5 }
+			V_{01} = -\frac{R_2 \,V_2 }{R_1 }
 		\end{equation}
 		
 		Normalizando los valores de la resistencia obtenemos:
@@ -149,19 +150,34 @@
 		\end{equation}
 		
 		\subsection{Simulación en SPICE}
+		Se realizaron las simulaciones para comprobar la formula (18), se le coloca una tensión en modo común
+		la tensión de salida resulta 0 como se espera.
 		
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc)}
-			\caption{Tensión en modo común}
+			\caption{Tensión en modo común $V_{02}=4\,(1V-1V)$}
 			\label{fig:circuito1vo1vc-vo2vc}
 		\end{figure} \newpage
 		
+		Para tensiones diferentes la salida responde a la ecuación (18) obteniéndose los $2V$ esperados.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2}
+			\caption{Tensiones diferentes $V_{02}=4\,(1V-0.5V)$}
+			\label{fig:circuito1vo2-vi1-vi2}
+		\end{figure}
+		
+			\subsection{Armado y mediciones del circuito}
+			Por ultimo se arma el circuito en la protoboard y excita  con las mismas señales que
+			se probaron en la simulación para contrastar los resultados.
+			
 		
 		
 		
 		
 		
+	
 		
 		
 \end{document}
