@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp1\LTspice_archivos\Draft6.asc
-Start Time: Sun Aug 25 20:06:51 2024
+Start Time: Mon Aug 26 11:12:41 2024
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -26,5 +26,5 @@ Gmin = 2.70769e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.706 seconds.
+Total elapsed time: 1.120 seconds.
 
