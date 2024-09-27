@@ -12,8 +12,8 @@
 	
 	\begin{abstract}
 		Primer laboratorio cuyo objetivo es familiarizarse con el armado y análisis de circuitos analógicos
-		lineales y no lineales. En este Trabajo Práctico debe considerar para los cálculos iniciales el
-		amplificador como ideal. \newpage
+		lineales y no lineales. En este Trabajo Práctico debe considerar para los cálculos iniciales el 
+		amplificador como ideal.
 	\end{abstract}
 	
 	
@@ -39,17 +39,17 @@
 	
 	Impedancia de entrada infinita: La alta impedancia de entrada implica que prácticamente no circula corriente hacia las entradas del operacional, lo que facilita la aplicación de la Ley de Kirchhoff de las Corrientes (KCL) en los nodos de entrada.
 	
-	Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida.
+	Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida. \newpage
 	
 	\section{Circuito I: Amplificador diferencial}
-		
+	
 		En esta sección se analiza el siguiente circuito.
-		\begin{figure}
+		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_esquematico}
 			\caption{Amplificador diferencial}
 			\label{fig:circuito1esquematico}
-		\end{figure} \\
+		\end{figure} 
 		
 		\subsection{Análisis del circuito}
 		Para el análisis podemos hacer uso de la propiedad de superposición, considerando la salida como la suma de los
@@ -93,7 +93,6 @@
 		\end{equation}
 		
 		Análisis de $V_{02}$ por superposición de $V_1$, $V_2$ y $V_{01}$:
-		
 		Para $V_1=0$ y $V_2=0$  tenemos una configuración inversora de $R_3$ sobre $R_5$
 		\begin{equation}
 			V_{02}=-\frac{R_3 \,V_{01} }{R_5 }
@@ -158,7 +157,7 @@
 			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc)}
 			\caption{Tensión en modo común $V_{02}=4\,(1V-1V)$}
 			\label{fig:circuito1vo1vc-vo2vc}
-		\end{figure} \newpage
+		\end{figure} 
 		
 		Para tensiones diferentes la salida responde a la ecuación (18) obteniéndose los $2V$ esperados.
 		\begin{figure}[h]
@@ -170,13 +169,85 @@
 		
 			\subsection{Armado y mediciones del circuito}
 			Por ultimo se arma el circuito en la protoboard y excita  con las mismas señales que
-			se probaron en la simulación para contrastar los resultados.
+			se probaron en la simulación para contrastar los resultados. \newpage
 			
+	\section {Circuito II: Fuente de corriente controlada por tensión}
+		En esta sección se analiza el siguiente circuito
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito2_esquematico}
+			\caption{Fuente de corriente controlada por tensión}
+			\label{fig:circuito2esquematico}
+		\end{figure}
+		
+		\subsection{Análisis del circuito}
+		Aplicamos ley de Kirchhoff en el nodo inversor tenemos:
+		
+		\begin{equation}
+			-\frac{\mathrm{V_{OUT}}-\mathrm{V^-}}{R_2 }=\frac{\mathrm{V_{IN}}-\mathrm{V^-}}{R_3 }
+		\end{equation}
+		
+		Suponiendo el amplificador ideal la tensión diferencial tiende a cero ${V^-}=0$ y despejando 
+		la tensión de salida
+		
+		\begin{equation}
+			{V_{OUT}}=-\frac{R_2 \,\mathrm{V_{IN}}}{R_3 }
+		\end{equation}
+		
+		Obtenemos la corriente de carga con la expresión: $I_{RL}=V_{OUT}/R2$ y reemplazando en la expresión
+		(20) obtenemos la corriente de carga en función del la tensión de entrada, la cual es independiente
+		de R2
+		
+		\begin{equation}
+			{I_{RL}}=-\frac{\mathrm{V_{IN}}}{R_3 }
+		\end{equation} 
+		
+		En la siguiente tabla de valores indica las corrientes obtenidas en LTSPICE para distintos
+		valores de tensión de entrada y resistencia de carga:
+		\begin{table}[!ht]
+			\centering
+			\begin{tabular}{|l|l|l|l|l|}
+				\hline
+				~ & ~ & Vin[V] & ~ & ~ \\ \hline
+				Irl & ~ & 0.5 & 1 & 2 \\ \hline
+				Rl[Ω] & 0 & 0 & 0 & 0 \\ \hline
+				~ & 1k & 495.9uA & -1.004mA & 1.996mA \\ \hline
+				~ & 2k & 495.9uA & -1.0039mA & 1.996mA \\ \hline
+				~ & 5k & 496.08uA & -1.004mA & 1.50mA \\ \hline
+				~ & 10k & 496.3uA & -814.82uA & 763.61uA \\ \hline
+			\end{tabular}
+		\end{table}
+		\subsection{Armado y mediciones del circuito}
+		\newpage
 		
 		
+	\section{Rectificador de precisión}
+	En esta sección se analiza el siguiente circuito
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito3_esquematico}
+		\caption{Rectificador de precisión}
+		\label{fig:circuito3esquematico}
+	\end{figure}
 		
-		
-		
+	Hacemos un primer análisis para $V_{IN}>0$, por lo que el diodo $D_1$
+	esta polarizado inversamente (circuito abierto) y $D2$ en forma directa. La salida en 
+	función de la tensión de entrada $VIN$ resulta:
+	
+	\begin{equation}
+		\frac{\mathrm{V_{OUT}}}{\mathrm{V_{IN}}}=\frac{5\,\mathrm{V_{IN}}}{3}
+	\end{equation}
+	
+	La salida en función de la tensión de salida del primer operacional $VOUT_1$ resulta:
+	
+	\begin{equation}
+		\frac{\mathrm{VOUT}}{{\textrm{VOUT}}_1 }=-\frac{2\,{\textrm{VOUT}}_1 }{3}
+	\end{equation}
+	
+	Sumando ambos efectos tenemos la salida total del sistema para la primer condición
+	\begin{equation}
+		{VOUT}=\frac{5\,\mathrm{VIN}}{3}-\frac{2\,{\textrm{VOUT}}_1 }{3}
+	\end{equation}
 	
 		
 		
