@@ -1,0 +1,242 @@
+
+**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Prueba_circ.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\enzog\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMP_BALANZA
+X_U1         N00215 N00219 N00448 N00462 N00223 OPA336/BB
+R_R1         N01438 N00215  1k TC=0,0 
+R_R2         0 N00215  10k TC=0,0 
+R_R3         N01442 N00219  1k TC=0,0 
+R_R4         N00219 N00223  10k TC=0,0 
+V_V3         N00448 0 10Vdc
+V_V4         0 N00462 10Vdc
+X_U2         N00223 N01010 N00448 N00462 N00998 OPA336/BB
+R_R5         0 N01010  1k TC=0,0 
+R_R6         N01010 N00998  9k TC=0,0 
+R_R7         0 N00998  1k TC=0,0 
+V_V2         N01438 0 5mVdc
+V_V1         0 N01442 5mVdc
+
+**** RESUMING Prueba_circ.cir ****
+.END
+
+**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.PCH        X_U1.NCH        X_U2.PCH        X_U2.NCH        
+               PMOS            NMOS            PMOS            NMOS            
+       LEVEL    3               3               3               3            
+         TPG                   -1                              -1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+          LD   12.000000E-09   34.000000E-09   12.000000E-09   34.000000E-09 
+          WD   43.000000E-09   17.000000E-09   43.000000E-09   17.000000E-09 
+         VTO    -.892            .81            -.892            .81         
+          KP   69.062880E-06   69.062880E-06   69.062880E-06   69.062880E-06 
+       GAMMA     .6              .6              .6              .6          
+         PHI     .71             .792            .71             .792        
+      LAMBDA    0               0               0               0            
+         RSH  117              68             117              68            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS  400.000000E-09  200.000000E-09  400.000000E-09  200.000000E-09 
+        JSSW  300.000000E-15  500.000000E-15  300.000000E-15  500.000000E-15 
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ  719.900000E-06  630.000000E-06  719.900000E-06  630.000000E-06 
+        CJSW  340.000000E-12  383.000000E-12  340.000000E-12  383.000000E-12 
+          MJ     .47             .25             .47             .25         
+        MJSW     .16             .11             .16             .11         
+        CGSO  180.000000E-12  155.000000E-12  180.000000E-12  155.000000E-12 
+        CGDO  180.000000E-12  155.000000E-12  180.000000E-12  155.000000E-12 
+        CGBO    0               0               0               0            
+         TOX   30.000000E-09   30.000000E-09   30.000000E-09   30.000000E-09 
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+          KF    0               0               0               0            
+          AF    1.05            1.05            1.05            1.05         
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.RPO2       X_U1.RNW        X_U2.RPO2       X_U2.RNW        
+           R    1               1               1               1            
+         TC1  630.000000E-06    5.500000E-03  630.000000E-06    5.500000E-03 
+         TC2    1.100000E-06  -13.000000E-06    1.100000E-06  -13.000000E-06 
+
+
+**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+
+
+ ****     Capacitor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.CP1P2      X_U2.CP1P2      
+           C    1               1            
+
+
+Starting pseudo-transient algorithm.
+
+INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
+
+**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00215)     .0045 (N00219)     .0045 (N00223)     .1000 (N00448)   10.0000     
+
+(N00462)  -10.0000 (N00998)    1.0000 (N01010)     .1000 (N01438)     .0050     
+
+(N01442)    -.0050 (X_U1.20)    8.8000                   (X_U1.23)    2.1874    
+
+(X_U1.25)   -9.1661                   (X_U1.27)   -9.1671                       
+
+(X_U1.29)   -9.1661                   (X_U1.32)   -7.9660                       
+
+(X_U1.34)   -7.9661                   (X_U1.43)    9.0654                       
+
+(X_U1.44)     .1010                   (X_U1.45)   -8.0661                       
+
+(X_U1.47)   -8.0661                   (X_U1.51)   -9.1493                       
+
+(X_U1.53)    9.0664                   (X_U1.54)  -10.0000                       
+
+(X_U1.55)    9.0752                   (X_U1.60)   -8.0556                       
+
+(X_U1.62)   -9.1453                   (X_U1.64)    8.1698                       
+
+(X_U1.67)    9.9958                   (X_U1.76)     .1010                       
+
+(X_U2.20)    8.8000                   (X_U2.23)    2.2739                       
+
+(X_U2.25)   -9.1661                   (X_U2.27)   -9.1671                       
+
+(X_U2.29)   -9.1661                   (X_U2.32)   -7.9660                       
+
+(X_U2.34)   -7.9661                   (X_U2.43)    9.0654                       
+
+(X_U2.44)    1.1100                   (X_U2.45)   -8.0923                       
+
+(X_U2.47)   -8.0923                   (X_U2.51)   -9.1569                       
+
+(X_U2.53)    9.0847                   (X_U2.54)  -10.0000                       
+
+(X_U2.55)    8.8371                   (X_U2.60)   -8.0556                       
+
+(X_U2.62)   -9.1453                   (X_U2.64)    8.1698                       
+
+(X_U2.67)    9.8971                   (X_U2.76)    1.1100                       
+
+(X_U1.GNDS)  -10.0000                 (X_U2.GNDS)  -10.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.144E-03
+    V_V4        -3.480E-05
+    V_V2        -4.545E-07
+    V_V1        -9.545E-06
+    X_U1.V64    -3.715E-15
+    X_U1.V60     4.000E-07
+    X_U1.V62     4.000E-07
+    X_U2.V64    -1.863E-13
+    X_U2.V60     4.000E-07
+    X_U2.V62     4.000E-07
+
+    TOTAL POWER DISSIPATION   1.18E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .16
+
