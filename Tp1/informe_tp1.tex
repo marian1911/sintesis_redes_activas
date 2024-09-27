@@ -249,7 +249,40 @@
 		{VOUT}=\frac{5\,\mathrm{VIN}}{3}-\frac{2\,{\textrm{VOUT}}_1 }{3}
 	\end{equation}
 	
-		
-		
+	\section{Circuito IV: Comparador con histeresis}
+	Ahora, pasaremos a analizar el siguiente circuito:
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito4_esquematico}
+		\caption{Comparador con histeresis}
+		\label{fig:circuito4esquematico}
+	\end{figure}
+
+	Hacemos un analisis por superposicion, cortamos por voltaje en la salida $V_{o}$ antes de $R_{4}$, y arrancamos analizando $V_{o}$ 			con $V_{in} = 0$ y $V_{ref} = 0$, obteniendo:
+ 	
+	\begin{equation}
+		V_{o} = \frac{1}{6} A_{d} V'_{o}
+	\end{equation}
+	
+	luego hacemos $V_{o}$ para $V'_{o} = 0$ y $V_{ref} = 0$, y obtenemos:
+
+	\begin{equation}
+		V_{o} = -\frac{1}{2} A_{d} V_{in}
+	\end{equation}
+
+	por ultimo haremos $V_{o}$ para $V'_{in} = 0$ y $V'_{o} = 0$, que nos da:
+
+	\begin{equation}
+		V_{o} = \frac{5}{6} A_{d} V_{ref}
+	\end{equation}
+
+	si hacemos $V'_{o} = V_{o}$ y despejando obtenemos:
+
+	\begin{equation}
+		V_{o} = \frac{A_{d} \frac{1}{6} (5 V_{ref} - 3 V_{in})}{1 - \frac{1}{6} A_{d}} = - (5 V_{ref} - 3V_{in})
+	\end{equation}
+
+
+
 \end{document}
 	}
