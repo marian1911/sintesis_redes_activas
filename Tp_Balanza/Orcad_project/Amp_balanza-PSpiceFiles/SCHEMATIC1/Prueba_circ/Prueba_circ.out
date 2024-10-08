@@ -1,7 +1,7 @@
 
-**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
 
  ****     CIRCUIT DESCRIPTION
@@ -36,21 +36,22 @@ R_R1         N01438 N00215  1k TC=0,0
 R_R2         0 N00215  10k TC=0,0 
 R_R3         N01442 N00219  1k TC=0,0 
 R_R4         N00219 N00223  10k TC=0,0 
-V_V3         N00448 0 10Vdc
-V_V4         0 N00462 10Vdc
+V_V3         N00448 0 5Vdc
+V_V4         0 N00462 5Vdc
 X_U2         N00223 N01010 N00448 N00462 N00998 OPA336/BB
 R_R5         0 N01010  1k TC=0,0 
 R_R6         N01010 N00998  9k TC=0,0 
 R_R7         0 N00998  1k TC=0,0 
 V_V2         N01438 0 5mVdc
 V_V1         0 N01442 5mVdc
+R_R8         N00223 0  900 TC=0,0 
 
 **** RESUMING Prueba_circ.cir ****
 .END
 
-**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -102,9 +103,9 @@ V_V1         0 N01442 5mVdc
        XPART    0               0               0               0            
 
 
-**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
 
  ****     Resistor MODEL PARAMETERS
@@ -121,9 +122,9 @@ V_V1         0 N01442 5mVdc
          TC2    1.100000E-06  -13.000000E-06    1.100000E-06  -13.000000E-06 
 
 
-**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
 
  ****     Capacitor MODEL PARAMETERS
@@ -142,9 +143,9 @@ Starting pseudo-transient algorithm.
 
 INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
 
-**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -157,51 +158,51 @@ INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set 
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00215)     .0045 (N00219)     .0045 (N00223)     .1000 (N00448)   10.0000     
+(N00215)     .0045 (N00219)     .0045 (N00223)     .1000 (N00448)    5.0000     
 
-(N00462)  -10.0000 (N00998)    1.0000 (N01010)     .1000 (N01438)     .0050     
+(N00462)   -5.0000 (N00998)    1.0000 (N01010)     .1000 (N01438)     .0050     
 
-(N01442)    -.0050 (X_U1.20)    8.8000                   (X_U1.23)    2.1874    
+(N01442)    -.0050 (X_U1.20)    3.8000                   (X_U1.23)    1.6459    
 
-(X_U1.25)   -9.1661                   (X_U1.27)   -9.1671                       
+(X_U1.25)   -4.1661                   (X_U1.27)   -4.1671                       
 
-(X_U1.29)   -9.1661                   (X_U1.32)   -7.9660                       
+(X_U1.29)   -4.1661                   (X_U1.32)   -2.9660                       
 
-(X_U1.34)   -7.9661                   (X_U1.43)    9.0654                       
+(X_U1.34)   -2.9661                   (X_U1.43)    4.0654                       
 
-(X_U1.44)     .1010                   (X_U1.45)   -8.0661                       
+(X_U1.44)     .1121                   (X_U1.45)   -3.0746                       
 
-(X_U1.47)   -8.0661                   (X_U1.51)   -9.1493                       
+(X_U1.47)   -3.0746                   (X_U1.51)   -4.1521                       
 
-(X_U1.53)    9.0664                   (X_U1.54)  -10.0000                       
+(X_U1.53)    4.0718                   (X_U1.54)   -5.0000                       
 
-(X_U1.55)    9.0752                   (X_U1.60)   -8.0556                       
+(X_U1.55)    4.0163                   (X_U1.60)   -3.0556                       
 
-(X_U1.62)   -9.1453                   (X_U1.64)    8.1698                       
+(X_U1.62)   -4.1453                   (X_U1.64)    3.1698                       
 
-(X_U1.67)    9.9958                   (X_U1.76)     .1010                       
+(X_U1.67)    4.9779                   (X_U1.76)     .1121                       
 
-(X_U2.20)    8.8000                   (X_U2.23)    2.2739                       
+(X_U2.20)    3.8000                   (X_U2.23)    1.7289                       
 
-(X_U2.25)   -9.1661                   (X_U2.27)   -9.1671                       
+(X_U2.25)   -4.1661                   (X_U2.27)   -4.1671                       
 
-(X_U2.29)   -9.1661                   (X_U2.32)   -7.9660                       
+(X_U2.29)   -4.1661                   (X_U2.32)   -2.9660                       
 
-(X_U2.34)   -7.9661                   (X_U2.43)    9.0654                       
+(X_U2.34)   -2.9661                   (X_U2.43)    4.0654                       
 
-(X_U2.44)    1.1100                   (X_U2.45)   -8.0923                       
+(X_U2.44)    1.1100                   (X_U2.45)   -3.0923                       
 
-(X_U2.47)   -8.0923                   (X_U2.51)   -9.1569                       
+(X_U2.47)   -3.0923                   (X_U2.51)   -4.1569                       
 
-(X_U2.53)    9.0847                   (X_U2.54)  -10.0000                       
+(X_U2.53)    4.0847                   (X_U2.54)   -5.0000                       
 
-(X_U2.55)    8.8371                   (X_U2.60)   -8.0556                       
+(X_U2.55)    3.8371                   (X_U2.60)   -3.0556                       
 
-(X_U2.62)   -9.1453                   (X_U2.64)    8.1698                       
+(X_U2.62)   -4.1453                   (X_U2.64)    3.1698                       
 
-(X_U2.67)    9.8971                   (X_U2.76)    1.1100                       
+(X_U2.67)    4.8971                   (X_U2.76)    1.1100                       
 
-(X_U1.GNDS)  -10.0000                 (X_U2.GNDS)  -10.0000                 
+(X_U1.GNDS)   -5.0000                 (X_U2.GNDS)   -5.0000                 
 
 
 
@@ -209,26 +210,26 @@ INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set 
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3        -1.144E-03
-    V_V4        -3.480E-05
+    V_V3        -1.254E-03
+    V_V4        -3.376E-05
     V_V2        -4.545E-07
     V_V1        -9.545E-06
-    X_U1.V64    -3.715E-15
+    X_U1.V64     1.876E-13
     X_U1.V60     4.000E-07
     X_U1.V62     4.000E-07
-    X_U2.V64    -1.863E-13
+    X_U2.V64    -1.760E-13
     X_U2.V60     4.000E-07
     X_U2.V62     4.000E-07
 
-    TOTAL POWER DISSIPATION   1.18E-02  WATTS
+    TOTAL POWER DISSIPATION   6.44E-03  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 09/25/24 13:49:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
 
  ****     JOB STATISTICS SUMMARY
@@ -238,5 +239,5 @@ INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set 
 
 
 
-  Total job time (using Solver 1)   =         .16
+  Total job time (using Solver 1)   =         .13
 
