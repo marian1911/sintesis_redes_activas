@@ -1,5 +1,5 @@
 
-**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
@@ -31,25 +31,50 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source AMP_BALANZA
-X_U1         N00215 N00219 N00448 N00462 N00223 OPA336/BB
 R_R1         N01438 N00215  1k TC=0,0 
 R_R2         0 N00215  10k TC=0,0 
 R_R3         N01442 N00219  1k TC=0,0 
 R_R4         N00219 N00223  10k TC=0,0 
 V_V3         N00448 0 5Vdc
 V_V4         0 N00462 5Vdc
-X_U2         N00223 N01010 N00448 N00462 N00998 OPA336/BB
 R_R5         0 N01010  1k TC=0,0 
 R_R6         N01010 N00998  9k TC=0,0 
-R_R7         0 N00998  1k TC=0,0 
-V_V2         N01438 0 5mVdc
-V_V1         0 N01442 5mVdc
-R_R8         N00223 0  900 TC=0,0 
+R_R7         0 N00998  10k TC=0,0 
+V_V2         N01438 0 10mVdc
+V_V1         0 N01442 10mVdc
+R_R8         N00223 N03063  900 TC=0,0 
+X_U3         N00215 N00219 N00448 N00462 N00223 MAX4240/MXM
+X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
 
 **** RESUMING Prueba_circ.cir ****
 .END
 
-**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.DA         X_U3.DB         X_U3.DX         X_U3.Dp         
+          IS    1.000000E-12    1.000000E-12    1.000000E-12   10.000000E-15 
+           N                                                    1.000000E-03 
+          RS  500             500                                            
+
+
+               X_U4.DA         X_U4.DB         X_U4.DX         X_U4.Dp         
+          IS    1.000000E-12    1.000000E-12    1.000000E-12   10.000000E-15 
+           N                                                    1.000000E-03 
+          RS  500             500                                            
+
+
+**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
@@ -62,88 +87,39 @@ R_R8         N00223 0  900 TC=0,0
 
 
 
-               X_U1.PCH        X_U1.NCH        X_U2.PCH        X_U2.NCH        
-               PMOS            NMOS            PMOS            NMOS            
-       LEVEL    3               3               3               3            
-         TPG                   -1                              -1            
-           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
-           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
-          LD   12.000000E-09   34.000000E-09   12.000000E-09   34.000000E-09 
-          WD   43.000000E-09   17.000000E-09   43.000000E-09   17.000000E-09 
-         VTO    -.892            .81            -.892            .81         
-          KP   69.062880E-06   69.062880E-06   69.062880E-06   69.062880E-06 
-       GAMMA     .6              .6              .6              .6          
-         PHI     .71             .792            .71             .792        
-      LAMBDA    0               0               0               0            
-         RSH  117              68             117              68            
-          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
-          JS  400.000000E-09  200.000000E-09  400.000000E-09  200.000000E-09 
-        JSSW  300.000000E-15  500.000000E-15  300.000000E-15  500.000000E-15 
-          PB     .8              .8              .8              .8          
-        PBSW     .8              .8              .8              .8          
-          CJ  719.900000E-06  630.000000E-06  719.900000E-06  630.000000E-06 
-        CJSW  340.000000E-12  383.000000E-12  340.000000E-12  383.000000E-12 
-          MJ     .47             .25             .47             .25         
-        MJSW     .16             .11             .16             .11         
-        CGSO  180.000000E-12  155.000000E-12  180.000000E-12  155.000000E-12 
-        CGDO  180.000000E-12  155.000000E-12  180.000000E-12  155.000000E-12 
-        CGBO    0               0               0               0            
-         TOX   30.000000E-09   30.000000E-09   30.000000E-09   30.000000E-09 
-          XJ    0               0               0               0            
-       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
-          KF    0               0               0               0            
-          AF    1.05            1.05            1.05            1.05         
-      DIOMOD    1               1               1               1            
-         VFB    0               0               0               0            
-        LETA    0               0               0               0            
-        WETA    0               0               0               0            
-          U0    0               0               0               0            
-        TEMP    0               0               0               0            
-         VDD    5               5               5               5            
-       XPART    0               0               0               0            
+               X_U3.MOSFET     X_U4.MOSFET     
+               PMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .25             .25         
+          KP    1.800000E-03    1.800000E-03 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
 
 
-**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
-
-
- ****     Resistor MODEL PARAMETERS
-
-
-******************************************************************************
-
-
-
-
-               X_U1.RPO2       X_U1.RNW        X_U2.RPO2       X_U2.RNW        
-           R    1               1               1               1            
-         TC1  630.000000E-06    5.500000E-03  630.000000E-06    5.500000E-03 
-         TC2    1.100000E-06  -13.000000E-06    1.100000E-06  -13.000000E-06 
-
-
-**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
-
-
- ****     Capacitor MODEL PARAMETERS
-
-
-******************************************************************************
-
-
-
-
-               X_U1.CP1P2      X_U2.CP1P2      
-           C    1               1            
-
-
-Starting pseudo-transient algorithm.
-
-INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
-
-**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
@@ -158,51 +134,41 @@ INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set 
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00215)     .0045 (N00219)     .0045 (N00223)     .1000 (N00448)    5.0000     
+(N00215)     .0091 (N00219)     .0091 (N00223)     .1996 (N00448)    5.0000     
 
-(N00462)   -5.0000 (N00998)    1.0000 (N01010)     .1000 (N01438)     .0050     
+(N00462)   -5.0000 (N00998)    1.9930 (N01010)     .1993 (N01438)     .0100     
 
-(N01442)    -.0050 (X_U1.20)    3.8000                   (X_U1.23)    1.6459    
+(N01442)    -.0100 (N03063)     .1996 (X_U3.4)    -.1882 (X_U3.5)   -4.9700     
 
-(X_U1.25)   -4.1661                   (X_U1.27)   -4.1671                       
+(X_U3.6)   -4.9700 (X_U3.7)     .0091 (X_U3.9)     .2021 (X_U4.4)     .0022     
 
-(X_U1.29)   -4.1661                   (X_U1.32)   -2.9660                       
+(X_U4.5)   -4.9698 (X_U4.6)   -4.9702 (X_U4.7)     .1996 (X_U4.9)    2.0448     
 
-(X_U1.34)   -2.9661                   (X_U1.43)    4.0654                       
+(X_U3.10)     .2021                   (X_U3.15)     .2021                       
 
-(X_U1.44)     .1121                   (X_U1.45)   -3.0746                       
+(X_U3.32)     .2021                   (X_U3.33)     .2021                       
 
-(X_U1.47)   -3.0746                   (X_U1.51)   -4.1521                       
+(X_U3.34)     .2021                   (X_U3.36)     .1996                       
 
-(X_U1.53)    4.0718                   (X_U1.54)   -5.0000                       
+(X_U3.37)     .3996                   (X_U3.38)    5.4336                       
 
-(X_U1.55)    4.0163                   (X_U1.60)   -3.0556                       
+(X_U3.40)    5.0000                   (X_U3.50)   -5.0000                       
 
-(X_U1.62)   -4.1453                   (X_U1.64)    3.1698                       
+(X_U3.98)    0.0000                   (X_U4.10)    2.0448                       
 
-(X_U1.67)    4.9779                   (X_U1.76)     .1121                       
+(X_U4.15)    2.0448                   (X_U4.32)    2.0448                       
 
-(X_U2.20)    3.8000                   (X_U2.23)    1.7289                       
+(X_U4.33)    2.0448                   (X_U4.34)    2.0448                       
 
-(X_U2.25)   -4.1661                   (X_U2.27)   -4.1671                       
+(X_U4.36)    1.9930                   (X_U4.37)    2.1930                       
 
-(X_U2.29)   -4.1661                   (X_U2.32)   -2.9660                       
+(X_U4.38)    5.5122                   (X_U4.40)    5.0000                       
 
-(X_U2.34)   -2.9661                   (X_U2.43)    4.0654                       
+(X_U4.50)   -5.0000                   (X_U4.98)    0.0000                       
 
-(X_U2.44)    1.1100                   (X_U2.45)   -3.0923                       
+(X_U3.111)    4.8500                  (X_U3.112)   -4.8500                      
 
-(X_U2.47)   -3.0923                   (X_U2.51)   -4.1569                       
-
-(X_U2.53)    4.0847                   (X_U2.54)   -5.0000                       
-
-(X_U2.55)    3.8371                   (X_U2.60)   -3.0556                       
-
-(X_U2.62)   -4.1453                   (X_U2.64)    3.1698                       
-
-(X_U2.67)    4.8971                   (X_U2.76)    1.1100                       
-
-(X_U1.GNDS)   -5.0000                 (X_U2.GNDS)   -5.0000                 
+(X_U4.111)    4.8500                  (X_U4.112)   -4.8500                  
 
 
 
@@ -210,24 +176,36 @@ INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set 
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V3        -1.254E-03
-    V_V4        -3.376E-05
-    V_V2        -4.545E-07
-    V_V1        -9.545E-06
-    X_U1.V64     1.876E-13
-    X_U1.V60     4.000E-07
-    X_U1.V62     4.000E-07
-    X_U2.V64    -1.760E-13
-    X_U2.V60     4.000E-07
-    X_U2.V62     4.000E-07
+    V_V3        -4.377E-04
+    V_V4        -2.000E-05
+    V_V2        -9.091E-07
+    V_V1        -1.906E-05
+    X_U3.vneg   -1.000E-05
+    X_U3.VB      0.000E+00
+    X_U3.V11     5.648E-12
+    X_U3.V12     6.052E-12
+    X_U3.VOS    -1.973E-13
+    X_U3.VA7    -1.434E-12
+    X_U3.V5      2.073E-09
+    X_U3.V4      1.030E-13
+    X_U3.VA8     1.906E-05
+    X_U4.vneg   -1.000E-05
+    X_U4.VB      0.000E+00
+    X_U4.V11     3.805E-12
+    X_U4.V12     7.895E-12
+    X_U4.VOS    -1.975E-13
+    X_U4.VA7    -1.512E-12
+    X_U4.V5      3.069E-10
+    X_U4.V4      6.466E-12
+    X_U4.VA8     3.986E-04
 
-    TOTAL POWER DISSIPATION   6.44E-03  WATTS
+    TOTAL POWER DISSIPATION   2.29E-03  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/08/24 13:13:30 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
 
@@ -239,5 +217,5 @@ INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set 
 
 
 
-  Total job time (using Solver 1)   =         .13
+  Total job time (using Solver 1)   =         .06
 
