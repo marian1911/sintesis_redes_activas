@@ -55,7 +55,7 @@
       (LibraryName
          "C:\CADENCE\SPB_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BURR_BRN.OLB")
       (DeviceIndex "0")))
-  (MPSSessionName "enzog")
+  (MPSSessionName "maria")
   (GlobalState
     (FileView
       (Path "Design Resources")
