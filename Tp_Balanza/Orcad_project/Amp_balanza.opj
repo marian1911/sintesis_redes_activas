@@ -1,6 +1,6 @@
 (ExpressProject "Amp_balanza"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1 P001 (4147275)  [9/30/2023]-[10/10/24]")
+  (SoftwareVersion "23.1 P001 (4147275)  [9/30/2023]-[10/22/24]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
@@ -77,8 +77,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 784")
-        (Scroll "0 94")
-        (Zoom "200")
+        (Scroll "-333 -4")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "D:\GD\SINTESIS DE REDES ACTIVAS\SINTESIS_REDES_ACTIVAS\TP_BALANZA\ORCAD_PROJECT\AMP_BALANZA.DSN")

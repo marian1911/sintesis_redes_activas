@@ -1,7 +1,7 @@
 
-**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,11 +18,12 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\enzog\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\maria\AppData\Roaming\SBP_23.1\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 1s 0 
+.TEMP 25 125
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -38,20 +39,20 @@ R_R4         N00219 N00223  10k TC=0,0
 V_V3         N00448 0 5Vdc
 V_V4         0 N00462 5Vdc
 R_R5         0 N01010  1k TC=0,0 
-R_R6         N01010 N00998  9k TC=0,0 
-R_R7         0 N00998  10k TC=0,0 
+R_R6         N01010 N01004  9k TC=0,0 
+R_R7         0 N01004  10k TC=0,0 
 V_V2         N01438 0 10mVdc
 V_V1         0 N01442 10mVdc
 R_R8         N00223 N03063  900 TC=0,0 
 X_U3         N00215 N00219 N00448 N00462 N00223 MAX4240/MXM
-X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
+X_U4         N03063 N01010 N00448 N00462 N01004 MAX4240/MXM
 
 **** RESUMING Prueba_circ.cir ****
 .END
 
-**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
 
 
  ****     Diode MODEL PARAMETERS
@@ -74,9 +75,9 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
           RS  500             500                                            
 
 
-**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -119,12 +120,58 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
        XPART    0               0            
 
 
-**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
 
 
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   25.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                   X_U3.DA        X_U3.DB        X_U3.DX    
+
+         IS        7.350E-13      7.350E-13      7.350E-13  
+         VJ        1.002E+00      1.002E+00      1.002E+00  
+        CJO        0.000E+00      0.000E+00      0.000E+00  
+         RS        5.000E+02      5.000E+02      0.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV                   
+
+                   X_U4.DA        X_U4.DB        X_U4.DX    
+
+         IS        7.350E-13      7.350E-13      7.350E-13  
+         VJ        1.002E+00      1.002E+00      1.002E+00  
+        CJO        0.000E+00      0.000E+00      0.000E+00  
+         RS        5.000E+02      5.000E+02      0.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV                   
+
+
+ **** MOSFET MODEL PARAMETERS
+
+                 X_U3.MOSFET    X_U4.MOSFET                 
+
+        VTO        2.475E-01      2.475E-01  
+        PHI        6.045E-01      6.045E-01  
+         PB        8.031E-01      8.031E-01  
+     IS(JS)        7.335E-15      7.335E-15  
+         KP        1.818E-03      1.818E-03  
+         UO        6.060E+02      6.060E+02  
+
+
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   25.000 DEG C
 
 
 ******************************************************************************
@@ -136,11 +183,11 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
 
 (N00215)     .0091 (N00219)     .0091 (N00223)     .1996 (N00448)    5.0000     
 
-(N00462)   -5.0000 (N00998)    1.9930 (N01010)     .1993 (N01438)     .0100     
+(N00462)   -5.0000 (N01004)    1.9930 (N01010)     .1993 (N01438)     .0100     
 
-(N01442)    -.0100 (N03063)     .1996 (X_U3.4)    -.1882 (X_U3.5)   -4.9700     
+(N01442)    -.0100 (N03063)     .1996 (X_U3.4)    -.1860 (X_U3.5)   -4.9700     
 
-(X_U3.6)   -4.9700 (X_U3.7)     .0091 (X_U3.9)     .2021 (X_U4.4)     .0022     
+(X_U3.6)   -4.9700 (X_U3.7)     .0091 (X_U3.9)     .2021 (X_U4.4)     .0044     
 
 (X_U4.5)   -4.9698 (X_U4.6)   -4.9702 (X_U4.7)     .1996 (X_U4.9)    2.0448     
 
@@ -150,7 +197,7 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
 
 (X_U3.34)     .2021                   (X_U3.36)     .1996                       
 
-(X_U3.37)     .3996                   (X_U3.38)    5.4336                       
+(X_U3.37)     .3996                   (X_U3.38)    5.4386                       
 
 (X_U3.40)    5.0000                   (X_U3.50)   -5.0000                       
 
@@ -162,7 +209,7 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
 
 (X_U4.36)    1.9930                   (X_U4.37)    2.1930                       
 
-(X_U4.38)    5.5122                   (X_U4.40)    5.0000                       
+(X_U4.38)    5.5167                   (X_U4.40)    5.0000                       
 
 (X_U4.50)   -5.0000                   (X_U4.98)    0.0000                       
 
@@ -182,32 +229,161 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
     V_V1        -1.906E-05
     X_U3.vneg   -1.000E-05
     X_U3.VB      0.000E+00
-    X_U3.V11     5.648E-12
-    X_U3.V12     6.052E-12
-    X_U3.VOS    -1.973E-13
-    X_U3.VA7    -1.434E-12
-    X_U3.V5      2.073E-09
-    X_U3.V4      1.030E-13
+    X_U3.V11     5.383E-12
+    X_U3.V12     5.787E-12
+    X_U3.VOS    -1.951E-13
+    X_U3.VA7    -1.174E-12
+    X_U3.V5      1.603E-09
+    X_U3.V4      7.689E-14
     X_U3.VA8     1.906E-05
     X_U4.vneg   -1.000E-05
     X_U4.VB      0.000E+00
-    X_U4.V11     3.805E-12
-    X_U4.V12     7.895E-12
-    X_U4.VOS    -1.975E-13
-    X_U4.VA7    -1.512E-12
-    X_U4.V5      3.069E-10
-    X_U4.V4      6.466E-12
+    X_U4.V11     3.540E-12
+    X_U4.V12     7.630E-12
+    X_U4.VOS    -1.952E-13
+    X_U4.VA7    -1.252E-12
+    X_U4.V5      2.344E-10
+    X_U4.V4      4.840E-12
     X_U4.VA8     3.986E-04
 
     TOTAL POWER DISSIPATION   2.29E-03  WATTS
+
+
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  125.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                   X_U3.DA        X_U3.DB        X_U3.DX    
+
+         IS        9.031E-08      9.031E-08      9.031E-08  
+         VJ        9.044E-01      9.044E-01      9.044E-01  
+        CJO        0.000E+00      0.000E+00      0.000E+00  
+         RS        5.000E+02      5.000E+02      0.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV                   
+
+                   X_U4.DA        X_U4.DB        X_U4.DX    
+
+         IS        9.031E-08      9.031E-08      9.031E-08  
+         VJ        9.044E-01      9.044E-01      9.044E-01  
+        CJO        0.000E+00      0.000E+00      0.000E+00  
+         RS        5.000E+02      5.000E+02      0.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV                   
+
+
+ **** MOSFET MODEL PARAMETERS
+
+                 X_U3.MOSFET    X_U4.MOSFET                 
+
+        VTO        3.776E-01      3.776E-01  
+        PHI        3.738E-01      3.738E-01  
+         PB        6.391E-01      6.391E-01  
+     IS(JS)        9.450E-10      9.450E-10  
+         KP        1.178E-03      1.178E-03  
+         UO        3.927E+02      3.927E+02  
+
+
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =  125.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00215)     .0091 (N00219)     .0091 (N00223)     .2001 (N00448)    5.0000     
+
+(N00462)   -5.0000 (N01004)    1.9971 (N01010)     .1997 (N01438)     .0100     
+
+(N01442)    -.0100 (N03063)     .2001 (X_U3.4)    -.3034 (X_U3.5)   -4.9700     
+
+(X_U3.6)   -4.9700 (X_U3.7)     .0091 (X_U3.9)    -.0521 (X_U4.4)    -.1125     
+
+(X_U4.5)   -4.9698 (X_U4.6)   -4.9702 (X_U4.7)     .2001 (X_U4.9)    1.9880     
+
+(X_U3.10)    -.0521                   (X_U3.15)    -.0521                       
+
+(X_U3.32)     .2060                   (X_U3.33)     .2060                       
+
+(X_U3.34)     .2060                   (X_U3.36)     .2001                       
+
+(X_U3.37)     .4001                   (X_U3.38)    5.2130                       
+
+(X_U3.40)    5.0000                   (X_U3.50)   -5.0000                       
+
+(X_U3.98)    0.0000                   (X_U4.10)    1.9880                       
+
+(X_U4.15)    1.9880                   (X_U4.32)    2.0498                       
+
+(X_U4.33)    2.0498                   (X_U4.34)    2.0498                       
+
+(X_U4.36)    1.9971                   (X_U4.37)    2.1971                       
+
+(X_U4.38)    5.2885                   (X_U4.40)    5.0000                       
+
+(X_U4.50)   -5.0000                   (X_U4.98)    0.0000                       
+
+(X_U3.111)    4.8500                  (X_U3.112)   -4.8500                      
+
+(X_U4.111)    4.8500                  (X_U4.112)   -4.8500                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -4.391E-04
+    V_V4        -2.055E-05
+    V_V2        -9.091E-07
+    V_V1        -1.910E-05
+    X_U3.vneg   -1.027E-05
+    X_U3.VB      0.000E+00
+    X_U3.V11     9.032E-08
+    X_U3.V12     9.032E-08
+    X_U3.VOS    -3.124E-13
+    X_U3.VA7    -9.013E-08
+    X_U3.V5      2.582E-05
+    X_U3.V4      1.675E-08
+    X_U3.VA8     4.491E-05
+    X_U4.vneg   -1.027E-05
+    X_U4.VB      0.000E+00
+    X_U4.V11     9.032E-08
+    X_U4.V12     9.032E-08
+    X_U4.VOS    -3.126E-13
+    X_U4.VA7    -9.029E-08
+    X_U4.V5      6.516E-06
+    X_U4.V4      3.297E-07
+    X_U4.VA8     4.056E-04
+
+    TOTAL POWER DISSIPATION   2.30E-03  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/09/24 11:43:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+**** 10/22/24 20:17:26 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Prueba_circ"  [ c:\facultad\materias--4to-2do\sintesis de redes activas\sintesis_redes_activas\tp_balanza\or
+ ** Profile: "SCHEMATIC1-Prueba_circ"  [ d:\gd\sintesis de redes activas\sintesis_redes_activas\tp_balanza\orcad_project\amp_balanza-
 
 
  ****     JOB STATISTICS SUMMARY
@@ -217,5 +393,5 @@ X_U4         N03063 N01010 N00448 N00462 N00998 MAX4240/MXM
 
 
 
-  Total job time (using Solver 1)   =         .06
+  Total job time (using Solver 1)   =         .03
 
