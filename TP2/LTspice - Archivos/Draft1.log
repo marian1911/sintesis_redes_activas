@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\TP2\LTspice - Archivos\Draft1.asc
-Start Time: Wed Nov 20 10:54:11 2024
+Start Time: Wed Nov 20 16:21:02 2024
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -15,16 +15,40 @@ Gmin = 0.0123794
 Gmin = 0.00132923
 Gmin = 0.000142725
 Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 1.84251e-05
+vernier = 0.0416667
+vernier = 0.0555555
+Gmin = 1.6385e-05
+vernier = 0.074074
+vernier = 0.0987653
+Gmin = 1.35977e-05
+vernier = 0.131687
+Gmin = 1.01552e-05
+vernier = 0.175583
+vernier = 0.23411
+Gmin = 6.25083e-06
+vernier = 0.312147
+vernier = 0.416196
+Gmin = 2.91578e-06
+vernier = 0.554928
+Gmin = 9.00063e-07
+vernier = 0.739903
+vernier = 0.986537
+Gmin = 1.34605e-07
+vernier = 1
+Gmin = 1.45312e-08
+Gmin = 1.56028e-09
+Gmin = 1.67533e-10
+Gmin = 1.79888e-11
+Gmin = 1.93153e-12
+Gmin = 2.07396e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 2.881 seconds.
+Total elapsed time: 0.231 seconds.
 
