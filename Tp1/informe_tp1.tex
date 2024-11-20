@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
+\usepackage{float}
 
 \title{Síntesis de redes activas \\ Laboratorio Nº1: Amplificadores ideales lineales y no lineales}
 
@@ -159,27 +160,24 @@
 			\label{fig:circuito1vo1vc-vo2vc}
 		\end{figure} 
 		
-		Para tensiones diferentes la salida responde a la ecuación (18) obteniéndose los $2V$ esperados.
+		Para tensiones diferentes la salida responde a la ecuación (18) obteniéndose los $2V$ esperados. 
+		
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2}
 			\caption{Tensiones diferentes $V_{02}=4\,(1V-0.5V)$}
 			\label{fig:circuito1vo2-vi1-vi2}
 		\end{figure}
-		
-			\subsection{Armado y mediciones del circuito}
-			Por ultimo se arma el circuito en la protoboard y excita  con las mismas señales que
-			se probaron en la simulación para contrastar los resultados. \newpage
 			
 	\section {Circuito II: Fuente de corriente controlada por tensión}
-		En esta sección se analiza el siguiente circuito
+		En esta sección se analiza el siguiente circuito (Figura 4):
+		
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito2_esquematico}
 			\caption{Fuente de corriente controlada por tensión}
 			\label{fig:circuito2esquematico}
 		\end{figure}
-		
 		\subsection{Análisis del circuito}
 		Aplicamos ley de Kirchhoff en el nodo inversor tenemos:
 		
@@ -217,11 +215,10 @@
 				~ & 10k & 496.3uA & -814.82uA & 763.61uA \\ \hline
 			\end{tabular}
 		\end{table}
-		\subsection{Armado y mediciones del circuito}
-		\newpage
 		
 		
-	\section{Rectificador de precisión}
+		
+	\section{Circuito III: Rectificador de precisión}
 	En esta sección se analiza el siguiente circuito
 	\begin{figure}[h]
 		\centering
@@ -249,7 +246,7 @@
 		{VOUT}=\frac{5\,\mathrm{VIN}}{3}-\frac{2\,{\textrm{VOUT}}_1 }{3}
 	\end{equation}
 	
-	\section{Circuito IV: Comparador con histeresis}
+	\section{Circuito IV: Comparador con histéresis}
 	Ahora, pasaremos a analizar el siguiente circuito:
 	\begin{figure}[h]
 		\centering
