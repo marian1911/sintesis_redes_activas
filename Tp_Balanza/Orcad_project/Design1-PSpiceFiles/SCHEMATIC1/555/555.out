@@ -1,0 +1,366 @@
+
+**** 11/21/24 14:23:18 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "555.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\enzog\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DESIGN1
+X_U1A         N00732 N00305 N00590 N00635 N00114 LM324
+X_U1B         N00114 N00240 N00590 N00635 N00258 LM324
+R_R2         N00240 N00258  22000 TC=0,0 
+R_R1         0 N00240  1000 TC=0,0 
+R_Rf         N00258 N00305  9k TC=0,0 
+R_Ri         N00305 0  1k TC=0,0 
+V_V1         N00590 0 10Vdc
+V_V2         0 N00635 10Vdc
+V_V3         N00732 0  AC 0.5
++SIN 0 0.5 1000 0 0 0
+R_Rl         N00258 0  1k TC=0,0 
+R_Rf1         N03086 N03100  9k TC=0,0 
+X_U1C         N02934 N03100 N02824 N03152 N03050 LM324
+R_R3         N03164 N03086  852 TC=0,0 
+R_Rl1         N03086 0  1k TC=0,0 
+V_V5         N02934 0  AC 0.5
++SIN 0 0.5 1000 0 0 0
+R_Ri1         N03100 0  1k TC=0,0 
+R_R4         0 N03164  45 TC=0,0 
+V_V4         N02824 0 10Vdc
+V_V6         0 N03152 10Vdc
+X_U2         N03050 N03164 N02824 N03152 N03086 LM6181/NS
+
+**** RESUMING 555.cir ****
+.END
+
+**** 11/21/24 14:23:18 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        X_U1B.dx        X_U1B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U1C.dx        X_U1C.dy        X_U2.DX         X_U2.DY         
+          IS  800.000000E-18  800.000000E-18    1.000000E-15   10.000000E-18 
+          RS    1               1.000000E-03                                 
+         CJO                   10.000000E-12                                 
+
+
+               X_U2.DN         
+          IS   10.000000E-15 
+          EG     .3          
+         XTI    0            
+          KF    1.667000E-09 
+
+
+**** 11/21/24 14:23:18 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.qx        X_U1B.qx        X_U1C.qx        X_U2.QNI        
+               PNP             PNP             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18   10.000000E-15 
+          BF  166.7           166.7           166.7           100.000000E+03 
+          NF    1               1               1               1            
+         VAF                                                   62.9          
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0              67.000000E-15 
+          AF    1               1               1               1            
+          CN    2.2             2.2             2.2             2.42         
+           D     .52             .52             .52             .87         
+
+
+               X_U2.QPI        X_U2.QNN        X_U2.QPN        
+               PNP             NPN             PNP             
+       LEVEL    1               1               1            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15 
+          BF  100.000000E+03  100.000000E+03  100.000000E+03 
+          NF    1               1               1            
+         VAF   62.9            62.9            62.9          
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF   67.000000E-15  413.000000E-15  413.000000E-15 
+          AF    1               1               1            
+          CN    2.2             2.42            2.2          
+           D     .52             .87             .52         
+
+
+**** 11/21/24 14:23:18 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.sw2       X_U1A.sw1       X_U1A.sw3       X_U1A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U1B.sw2       X_U1B.sw1       X_U1B.sw3       X_U1B.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U1C.sw2       X_U1C.sw1       X_U1C.sw3       X_U1C.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+**** 11/21/24 14:23:18 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00114) 134.2E-06 (N00240)-58.30E-06 (N00258)    -.0023 (N00305)-192.5E-06     
+
+(N00590)   10.0000 (N00635)  -10.0000 (N00732)    0.0000 (N02824)   10.0000     
+
+(N02934)    0.0000 (N03050)    -.0023 (N03086)    -.0023 (N03100)-192.5E-06     
+
+(N03152)  -10.0000 (N03164) 118.2E-06 (X_U2.3) 118.2E-06 (X_U2.4)    -.6198     
+
+(X_U2.5)     .6201 (X_U2.6)     .6201 (X_U2.7)    -.6198 (X_U2.8)    9.8136     
+
+(X_U2.9)   -9.8136 (X_U1A.6)-24.55E-09                   (X_U1A.7) 132.0E-06    
+
+(X_U1A.8) 132.0E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1A.a)   10.0000                   (X_U1A.b)-1.157E-06                       
+
+(X_U1B.6) 478.5E-09                   (X_U1B.7)    -.0025                       
+
+(X_U1B.8)    -.0025                   (X_U1B.9)    0.0000                       
+
+(X_U1B.a) 3.670E-06                   (X_U1B.b)  -10.0000                       
+
+(X_U1C.6) 413.6E-09                   (X_U1C.7)    -.0022                       
+
+(X_U1C.8)    -.0022                   (X_U1C.9)    0.0000                       
+
+(X_U1C.a)   10.0000                   (X_U1C.b)-2.100E-06                       
+
+(X_U2.10)    9.7000                   (X_U2.11)   -9.7000                       
+
+(X_U2.12)     .6201                   (X_U2.13)    -.6198                       
+
+(X_U2.15)    -.0026                   (X_U2.16)    8.3000                       
+
+(X_U2.17)   -8.0000                   (X_U2.20)    -.0026                       
+
+(X_U2.21)    -.0026                   (X_U2.22)    -.0026                       
+
+(X_U2.23)    -.0026                   (X_U2.30)    9.7000                       
+
+(X_U2.31)   -9.7000                   (X_U2.33)    5.2977                       
+
+(X_U2.34)   -5.3023                   (X_U2.35)    9.4202                       
+
+(X_U2.36)   10.0000                   (X_U2.37)    -.0026                       
+
+(X_U2.38)    -.0026                   (X_U2.44)     .0141                       
+
+(X_U2.45)     .0141                   (X_U2.46)    -.0141                       
+
+(X_U2.47)    -.0141                   (X_U2.49)-888.2E-18                       
+
+(X_U2.55)   10.0000                   (X_U2.56)     .0015                       
+
+(X_U2.57)     .0033                   (X_U2.58)     .1000                       
+
+(X_U2.59) 569.4E-12                   (X_U2.60)     .1000                       
+
+(X_U2.61) 569.4E-12                   (X_U2.62)    0.0000                       
+
+(X_U2.63)    0.0000                   (X_U2.98)-888.2E-18                       
+
+(X_U1A.10)     .6076                  (X_U1A.11)   -9.9602                      
+
+(X_U1A.12)   -9.9604                  (X_U1A.13)     .5937                      
+
+(X_U1A.14)     .5937                  (X_U1A.53)    8.5000                      
+
+(X_U1A.54)   -9.1780                  (X_U1A.90)-44.71E-06                      
+
+(X_U1A.91)   40.0000                  (X_U1A.92)  -40.0000                      
+
+(X_U1A.99)    0.0000                  (X_U1B.10)     .6077                      
+
+(X_U1B.11)   -9.9602                  (X_U1B.12)   -9.9604                      
+
+(X_U1B.13)     .5938                  (X_U1B.14)     .5939                      
+
+(X_U1B.53)    8.5000                  (X_U1B.54)   -9.1780                      
+
+(X_U1B.90)    -.0027                  (X_U1B.91)   40.0000                      
+
+(X_U1B.92)  -40.0000                  (X_U1B.99)    0.0000                      
+
+(X_U1C.10)     .6076                  (X_U1C.11)   -9.9602                      
+
+(X_U1C.12)   -9.9604                  (X_U1C.13)     .5937                      
+
+(X_U1C.14)     .5937                  (X_U1C.53)    8.5000                      
+
+(X_U1C.54)   -9.1780                  (X_U1C.90)     .0011                      
+
+(X_U1C.91)   40.0000                  (X_U1C.92)  -40.0000                      
+
+(X_U1C.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.437E-03
+    V_V2        -4.439E-03
+    V_V3         4.471E-08
+    V_V5         4.471E-08
+    V_V4        -8.975E-03
+    V_V6        -8.975E-03
+    X_U1A.vb    -2.455E-13
+    X_U1A.vc     2.688E-11
+    X_U1A.ve     2.922E-11
+    X_U1A.vlim  -4.471E-08
+    X_U1A.vlp   -1.265E-10
+    X_U1A.vln   -1.265E-10
+    X_U1B.vb     4.785E-12
+    X_U1B.vc     2.689E-11
+    X_U1B.ve     2.921E-11
+    X_U1B.vlim  -2.670E-06
+    X_U1B.vlp   -1.265E-10
+    X_U1B.vln   -1.265E-10
+    X_U1C.vb     4.136E-12
+    X_U1C.vc     2.689E-11
+    X_U1C.ve     2.921E-11
+    X_U1C.vlim   1.100E-06
+    X_U1C.vlp   -1.265E-10
+    X_U1C.vln   -1.265E-10
+    X_U2.V1     -3.603E-13
+    X_U2.V2     -3.603E-13
+    X_U2.VA3    -1.961E-12
+    X_U2.VA4    -1.961E-12
+    X_U2.V3      2.626E-11
+    X_U2.V4      2.529E-11
+    X_U2.V15    -7.839E-13
+    X_U2.V16    -7.839E-13
+    X_U2.V17     0.000E+00
+    X_U2.V18     0.000E+00
+    X_U2.VA7     5.439E-06
+    X_U2.VA8    -5.439E-06
+    X_U2.V5     -1.633E-11
+    X_U2.V6     -1.676E-11
+
+    TOTAL POWER DISSIPATION   2.68E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/21/24 14:23:18 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.84
+
