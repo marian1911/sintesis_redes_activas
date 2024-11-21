@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  20 NOV 2024 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  21 NOV 2024 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,8 +201,22 @@ Package pdftex.def Info: Imagenes_simulaciones/Sim_slow_rate.png  used on input
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5 <./Imagenes_simulaciones/Sim_Error_DC.png> <./Imagenes_simulaciones/Sim_Bode
-_3db_marcados.png>] [6 <./Imagenes_simulaciones/Sim_slow_rate.png>]
-(informe_tp2.aux
+_3db_marcados.png>]
+<Imagenes_simulaciones/Sim_Ganancia_C2.png, id=37, 1154.51324pt x 510.708pt>
+File: Imagenes_simulaciones/Sim_Ganancia_C2.png Graphic file (type png)
+<use Imagenes_simulaciones/Sim_Ganancia_C2.png>
+Package pdftex.def Info: Imagenes_simulaciones/Sim_Ganancia_C2.png  used on inp
+ut line 172.
+(pdftex.def)             Requested size: 390.0pt x 172.51625pt.
+ [6 <./Imagenes_simulaciones/Sim_slow_rate.png>] [7 <./Imagenes_simulaciones/Si
+m_Ganancia_C2.png>]
+<Imagenes_simulaciones/Sim_Error_DC_C2.png, id=47, 1152.10425pt x 509.5035pt>
+File: Imagenes_simulaciones/Sim_Error_DC_C2.png Graphic file (type png)
+<use Imagenes_simulaciones/Sim_Error_DC_C2.png>
+Package pdftex.def Info: Imagenes_simulaciones/Sim_Error_DC_C2.png  used on inp
+ut line 238.
+(pdftex.def)             Requested size: 390.0pt x 172.467pt.
+ [8] [9 <./Imagenes_simulaciones/Sim_Error_DC_C2.png>] (informe_tp2.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -212,10 +226,10 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2891 strings out of 474486
- 49790 string characters out of 5753570
+ 2919 strings out of 474486
+ 50908 string characters out of 5753570
  1931542 words of memory out of 5000000
- 25189 multiletter control sequences out of 15000+600000
+ 25217 multiletter control sequences out of 15000+600000
  563879 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,289b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -228,9 +242,9 @@ ic/amsfonts/cm/cmr10.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/c
 m/cmr12.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><
 D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/Progr
 ama latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on informe_tp2.pdf (6 pages, 302924 bytes).
+Output written on informe_tp2.pdf (9 pages, 360886 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

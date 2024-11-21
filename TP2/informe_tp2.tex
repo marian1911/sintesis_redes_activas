@@ -65,7 +65,7 @@
 		Z=(R//R//Rf)
 	\end{equation}
 	\begin{equation}
-			\bigtriangleup V(ipol+) =\frac{(Ipol+)(R//R//Rf)(-Ad)}{1-T}
+			\bigtriangleup V(ipol+) =\frac{(Ipol+)(R//R//Rf)(Ad)}{1-T}
 	\end{equation}
 
 	
@@ -76,7 +76,7 @@
 	Resultando:
 	
 	\begin{equation}
-		\bigtriangleup V = \frac{[(Ipol+)(R//R//Rf)(-Ad)]-[(Ipol-)(R//R//Rf)(-Ad)]}{1+ \frac{R//R(Ad)}{R//R+Rf}}
+		\bigtriangleup V = \frac{[(Ipol+)(R//R//Rf)(Ad)]-[(Ipol-)(R//R//Rf)(-Ad)]}{1+ \frac{R//R(Ad)}{R//R+Rf}}
 	\end{equation}
 	
 	Simplificando la expresión y teniendo en cuenta que $IOS=(Ipol+)-(Ipol-)$ tenemos:
@@ -148,8 +148,106 @@
 		\caption[Slew rate]{Slew rate}
 		\label{fig:simslowrate}
 	\end{figure}
-
 	
+	\section{Circuito II: Amplificadores en cascada con puente de  Wheatstone }
+	En este circuito tenemos un puente de Wheastone que produce una tensión diferencial, esta se amplifica mediante dos etapas, una no inversora (primera) y otra no inversora (segunda).
+	
+	\subsection{Análisis de la ganancia de tensión en la banda media}
+	Para la primera etapa tenemos amplificador en configuración no inversora, la ganancia resulta:
+	\begin{equation}
+		\frac{Vx}{Vin}=(1+\frac{R1}{aR1})
+	\end{equation}
+	
+	Teniendo en cuenta que $aR1=47[Kohm]$ y $R1=2.2[Kohm]$, la ganancia resulta: $1.046$
+	
+	Para la segunda etapa tenemos un inversor donde la ganancia de tensión resulta:
+	\begin{equation}
+		\frac{Vo}{Vx}= \frac{-aR2}{R2}
+	\end{equation}
+	
+	Teniendo en cuenta que $aR2=47[Kohm]$ y $R2=2.2[Kohm]$, la ganancia resulta: $-21.36$
+	Por lo tanto la ganancia resultante es de $-22.34$, aproximadamente.
+	
+	\begin{figure}
+		\includegraphics[width=\linewidth]{Imagenes_simulaciones/Sim_Ganancia_C2}
+		\caption[Ganancia de tensión en la banda media]{Ganancia de tension en la banda media}
+		\label{fig:simgananciac2}
+	\end{figure}
+	
+	\subsection{Análisis de error en continua}
+	Error de corriente del primer amplificador:
+	
+	\begin{equation}
+		V(Ipol+)=\frac{(Ipol+)(Rp//Rp)(Ad)(-aR2/R2)}{(1-T1)}
+	\end{equation}
+	\begin{equation}
+		V(Ipol-)=\frac{(Ipol-)(aR1//R1)(-Ad)(-aR2/R2)}{(1-T1)}
+	\end{equation}
+	\begin{equation}
+		T1=\frac{-aR1(Ad)}{R1}
+	\end{equation}
+	
+	Simplificando la expresión queda:
+	\begin{equation}
+		\bigtriangleup V= \frac{(Ipol)(-aR2/R2)[aR1//R1-Rp//Rp]}{\frac{aR1}{R1}}
+	\end{equation}
+	
+	Reemplazando los valores de las resistencias y conociendo el valor de la corriente de polarización del amplificador operacional, $Ipol=90[nA]$, el error de corriente para la primera etapa es de $40.04[uV]$
+	
+	Error de corriente del segundo amplificador:
+	\begin{equation}
+		V(Ipol+)=\frac{(Ipol+)(Rp//Rp)(Ad)}{(1-T2)}
+	\end{equation}
+	\begin{equation}
+		V(Ipol-)=\frac{(Ipol-)(aR2//R2)(-Ad)}{(1-T2)}
+	\end{equation}
+	\begin{equation}
+		T2=\frac{-R2(Ad)}{aR2}
+	\end{equation}
+	
+	Simplificando la expresión queda:
+	\begin{equation}
+		\bigtriangleup V= \frac{(Ipol)[(Rp//Rp)-(R2//aR2)]}{\frac{R2}{aR2}}
+	\end{equation}
+	
+	El error de corriente para el segundo operacional resulta $0.86[mV]$
+	
+	Error de tensión de offset para el primer operacional
+	\begin{equation}
+		\bigtriangleup V = \frac{VOS(aR2//R2)}{\frac{aR1}{R1}}
+	\end{equation}
+	
+	Para una tensión de offset de  $2[mV]$  el error resulta $2[mV]$
+	
+	Error de tensión para el segundo operacional
+	\begin{equation}
+		\bigtriangleup V=\frac{VOS}{\frac{R2}{aR2}}
+	\end{equation}
+	Error resulta $42.7[mV]$
+	
+	Error de ganancia no infinita:
+	\begin{equation}
+		\bigtriangleup V = \frac{FS}{|T1|}=2.36[uV]
+	\end{equation}
+	
+		\begin{equation}
+		\bigtriangleup V = \frac{FS}{|T2|}=1.068[mV]
+	\end{equation}
+	
+	\begin{figure}
+		\includegraphics[width=\linewidth]{Imagenes_simulaciones/Sim_Error_DC_C2}
+		\caption[Error en DC]{Error en DC}
+		\label{fig:simerrordcc2}
+	\end{figure}
+	
+	El error total en continua resulta: $46.6[mV]$, calculamos la resolución en bits para el ADC:
+	\begin{equation}
+		\bigtriangleup V <= \frac{FE}{2^n}
+	\end{equation}
+	
+	\begin{equation}
+		n = \log(\frac{FS}{\bigtriangleup V}) = 6.74 bits
+	\end{equation}
 	
 \end{document}
 }
