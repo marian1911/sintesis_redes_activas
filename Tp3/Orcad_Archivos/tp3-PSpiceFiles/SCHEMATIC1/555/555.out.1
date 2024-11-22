@@ -1,0 +1,49 @@
+
+**** 11/21/24 13:22:42 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-555"  [ C:\FACULTAD\Materias--4to-2do\Sintesis de Redes Activas\sintesis_redes_activas\Tp_Balanza\Orcad_proj
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "555.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\enzog\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1 10000000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DESIGN1
+X_U1A         N00732 N00305 N00590 N00635 N00114 LM324
+X_U1B         N00114 N00240 N00590 N00635 N00258 LM324
+R_R1         N00240 N00258  22k TC=0,0 
+R_R2         0 N00240  1k TC=0,0 
+R_R3         N00291 N00305  9k TC=0,0 
+R_R4         N00305 0  1k TC=0,0 
+V_V1         N00590 0 10Vdc
+V_V2         0 N00635 10Vdc
+V_V3         N00732 0  AC 0.5
++SIN 0 0.5 1000 0 0 0
+
+**** RESUMING 555.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00291.
+

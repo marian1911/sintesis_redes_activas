@@ -1,0 +1,4 @@
+ lib=C:\Cadence\SPB_23.1\tools\PSpice\Library\pwrbjt.lib, offset=223964, size=339
+ lib=C:\Cadence\SPB_23.1\tools\PSpice\Library\opamp.lib, offset=53165, size=1419
+ lib=C:\Cadence\SPB_23.1\tools\PSpice\Library\nat_semi.lib, offset=148885, size=3816
+ lib=C:\Cadence\SPB_23.1\tools\PSpice\Library\tex_inst.lib, offset=94365, size=693
