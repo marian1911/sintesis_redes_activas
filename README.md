@@ -1,5 +1,5 @@
 ## Repositorio sistesis de redes activas año 2024
 
-# Alumnos: 
+### Alumnos: 
 **Campos Mariano**
 **Enzo Verstraete**
