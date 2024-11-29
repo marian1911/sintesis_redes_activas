@@ -1,0 +1,32 @@
+* source FILTRO_NOTCH
+X_U1A         N05073 OUTPB N04642 N04654 OUTPB LM324
+V_V1         N04642 0 10V
+V_V2         0 N04654 10V
+R_R1pb         IN N04884 R_R1pb 10k TC=0,0 
+.model        R_R1pb RES R=1 DEV=10% TC1=0 TC2=0
+R_R2pb         N04884 N05073 R_R2pb 10k TC=0,0 
+.model        R_R2pb RES R=1 DEV=10% TC1=0 TC2=0
+C_C1pb         0 N05073 C_C1pb 15.9n  TC=0,0 
+.model        C_C1pb CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+C_C2pb         N04884 OUTPB C_C2pb 6.36u  TC=0,0 
+.model        C_C2pb CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+X_U1B         N06276 OUTPA N06112 N06444 OUTPA LM324
+V_V4         N06112 0 10V
+V_V6         0 N06444 10V
+V_V5         IN 0  AC 1
++SIN 0 100mV 1k 0 0 0
+R_R1pa         N06142 OUTPA R_R1pa 1.59k TC=0,0 
+.model        R_R1pa RES R=1 DEV=10% TC1=0 TC2=0
+R_R2pa         0 N06276 R_R2pa 636k TC=0,0 
+.model        R_R2pa RES R=1 DEV=10% TC1=0 TC2=0
+C_C2pa         N06142 N06276 C_C2pa 100n  TC=0,0 
+.model        C_C2pa CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+C_C1pa         IN N06142  100n  TC=0,0 
+R_RiPB         OUTPB N07525 R_RiPB 10k TC=0,0 
+.model        R_RiPB RES R=1 DEV=10% TC1=0 TC2=0
+R_RiPA         OUTPA N07525 R_RiPA 10k TC=0,0 
+.model        R_RiPA RES R=1 DEV=10% TC1=0 TC2=0
+X_U1C         0 N07525 N04642 N04654 OUT LM324
+R_Rf         N07525 OUT R_Rf 10k TC=0,0 
+.model        R_Rf RES R=1 DEV=10% TC1=0 TC2=0
+R_Rload         0 OUT  5k TC=0,0 

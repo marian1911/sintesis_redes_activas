@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  20 NOV 2024 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  27 NOV 2024 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -139,8 +139,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 12.
  [1
 
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-<Simulaciones-Resultados/Circuito1_esquematico.png, id=15, 820.86674pt x 454.69
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<Simulaciones-Resultados/Circuito1_esquematico.png, id=11, 820.86674pt x 454.69
 875pt>
 File: Simulaciones-Resultados/Circuito1_esquematico.png Graphic file (type png)
 
@@ -148,14 +148,18 @@ File: Simulaciones-Resultados/Circuito1_esquematico.png Graphic file (type png)
 Package pdftex.def Info: Simulaciones-Resultados/Circuito1_esquematico.png  use
 d on input line 50.
 (pdftex.def)             Requested size: 390.0pt x 216.03271pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 59.
- [3 <./Simulaciones-Resultados/Circuito1_esquematico.png>] [4]
-<Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png, id=27, 1155.1155pt x 51
+[2] [3 <./Simulaciones-Resultados/Circuito1_esquematico.png>]
+<Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png, id=24, 1155.1155pt x 51
 0.10574pt>
 File: Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png Graphic file (type 
 png)
@@ -163,7 +167,11 @@ png)
 Package pdftex.def Info: Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png 
  used on input line 158.
 (pdftex.def)             Requested size: 390.0pt x 172.2272pt.
-<Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2.png, id=28, 1154.51324pt x 517.9
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2.png, id=25, 1154.51324pt x 517.9
 35pt>
 File: Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2.png Graphic file (type png)
 
@@ -172,9 +180,9 @@ Package pdftex.def Info: Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2.png  use
 d on input line 167.
 (pdftex.def)             Requested size: 390.0pt x 174.95752pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[4]
 <Simulaciones-Resultados/Circuito2_esquematico.png, id=29, 554.07pt x 389.0535p
 t>
 File: Simulaciones-Resultados/Circuito2_esquematico.png Graphic file (type png)
@@ -183,12 +191,12 @@ File: Simulaciones-Resultados/Circuito2_esquematico.png Graphic file (type png)
 Package pdftex.def Info: Simulaciones-Resultados/Circuito2_esquematico.png  use
 d on input line 177.
 (pdftex.def)             Requested size: 390.0pt x 273.84938pt.
-[5 <./Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2.png>]
-<Simulaciones-Resultados/Circuito3_esquematico.png, id=40, 813.63976pt x 419.16
+[5 <./Simulaciones-Resultados/Circuito1_Vo1(Vc)-Vo2(Vc).png>]
+<Simulaciones-Resultados/Circuito3_esquematico.png, id=36, 813.63976pt x 419.16
 6pt>
 File: Simulaciones-Resultados/Circuito3_esquematico.png Graphic file (type png)
 
@@ -196,18 +204,49 @@ File: Simulaciones-Resultados/Circuito3_esquematico.png Graphic file (type png)
 Package pdftex.def Info: Simulaciones-Resultados/Circuito3_esquematico.png  use
 d on input line 225.
 (pdftex.def)             Requested size: 390.0pt x 200.91597pt.
- [7 <./Simulaciones-Resultados/Circuito2_esquematico.png>]
-<Simulaciones-Resultados/Circuito4_esquematico.png, id=47, 705.837pt x 483.6067
+ [6 <./Simulaciones-Resultados/Circuito1_Vo2-Vi1-Vi2.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./Simulaciones-Resultados/Circuito2_esquematico.png>]
+<Simulaciones-Resultados/Circuito3_Vo1(Vin)-Vo2(Vin).png, id=47, 1153.30875pt x
+ 510.10574pt>
+File: Simulaciones-Resultados/Circuito3_Vo1(Vin)-Vo2(Vin).png Graphic file (typ
+e png)
+<use Simulaciones-Resultados/Circuito3_Vo1(Vin)-Vo2(Vin).png>
+Package pdftex.def Info: Simulaciones-Resultados/Circuito3_Vo1(Vin)-Vo2(Vin).pn
+g  used on input line 254.
+(pdftex.def)             Requested size: 390.0pt x 172.49962pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Simulaciones-Resultados/Circuito4_esquematico.png, id=48, 705.837pt x 483.6067
 5pt>
 File: Simulaciones-Resultados/Circuito4_esquematico.png Graphic file (type png)
 
 <use Simulaciones-Resultados/Circuito4_esquematico.png>
 Package pdftex.def Info: Simulaciones-Resultados/Circuito4_esquematico.png  use
-d on input line 253.
+d on input line 263.
 (pdftex.def)             Requested size: 390.0pt x 267.21686pt.
- [8 <./Simulaciones-Resultados/Circuito3_esquematico.png>] [9 <./Simulaciones-R
-esultados/Circuito4_esquematico.png>]
-[10] (informe_tp1.aux
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./Simulaciones-Resultados/Circuito3_esquematico.png>] [9 <./Simulaciones-Re
+sultados/Circuito3_Vo1(Vin)-Vo2(Vin).png> <./Simulaciones-Resultados/Circuito4_
+esquematico.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 290.
+
+<Simulaciones-Resultados/Circuito4_Vo(Vi).png, id=58, 1155.1155pt x 511.9125pt>
+
+File: Simulaciones-Resultados/Circuito4_Vo(Vi).png Graphic file (type png)
+<use Simulaciones-Resultados/Circuito4_Vo(Vi).png>
+Package pdftex.def Info: Simulaciones-Resultados/Circuito4_Vo(Vi).png  used on 
+input line 291.
+(pdftex.def)             Requested size: 390.0pt x 172.83722pt.
+[10] [11 <./Simulaciones-Resultados/Circuito4_Vo(Vi).png>] (informe_tp1.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -217,13 +256,13 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2916 strings out of 474486
- 51050 string characters out of 5753570
- 1932542 words of memory out of 5000000
- 25213 multiletter control sequences out of 15000+600000
+ 2936 strings out of 474486
+ 52264 string characters out of 5753570
+ 1933542 words of memory out of 5000000
+ 25233 multiletter control sequences out of 15000+600000
  564216 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,65p,343b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,9n,65p,530b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm2074.pk><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmbx10.pf
@@ -236,9 +275,9 @@ fonts/cm/cmr10.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr1
 ex/Programa latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/Programa la
 tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Latex/Programa latex/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb>
-Output written on informe_tp1.pdf (10 pages, 256788 bytes).
+Output written on informe_tp1.pdf (11 pages, 325815 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

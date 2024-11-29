@@ -36,11 +36,11 @@
 	del circuito de manera rápida y eficiente. Para dicho análisis se tienen en cuenta las siguientes
 	consideraciones.
 	
-	Ganancia infinita: Al considerar una ganancia infinita, la diferencia de tensión entre las entradas inversora y no inversora se hace prácticamente cero. Esto permite aplicar el concepto de "masa virtual" en la entrada inversora, simplificando notablemente el análisis.
+	Ganancia infinita: Al considerar una ganancia infinita, la diferencia de tensión entre las entradas inversora y no inversora se hace prácticamente cero. Esto permite aplicar el concepto de masa virtual en la entrada inversora, simplificando notablemente el análisis.
 	
 	Impedancia de entrada infinita: La alta impedancia de entrada implica que prácticamente no circula corriente hacia las entradas del operacional, lo que facilita la aplicación de la Ley de Kirchhoff de las Corrientes (KCL) en los nodos de entrada.
 	
-	Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida. \newpage
+	Impedancia de salida nula: Al considerar una impedancia de salida nula, se asume que el operacional puede suministrar cualquier cantidad de corriente sin que su tensión de salida se vea afectada, lo que simplifica el análisis de la carga conectada a la salida.
 	
 	\section{Circuito I: Amplificador diferencial}
 	
@@ -170,7 +170,7 @@
 		\end{figure}
 			
 	\section {Circuito II: Fuente de corriente controlada por tensión}
-		En esta sección se analiza el siguiente circuito (Figura 4):
+		En esta sección se analiza el siguiente circuito (Figura 4),este tipo de circuito, como su nombre indica, es un dispositivo electrónico que suministra una corriente eléctrica a una carga, pero la magnitud de esta corriente es directamente proporcional a una tensión de entrada. En otras palabras, al variar la tensión de entrada (Vin), variamos la corriente de salida (IL) de manera controlada.
 		
 		\begin{figure}[h]
 			\centering
@@ -215,70 +215,88 @@
 				~ & 10k & 496.3uA & -814.82uA & 763.61uA \\ \hline
 			\end{tabular}
 		\end{table}
-		
+	Con las simulaciones podemos ver que cuando el producto de la corriente de referencia por la resistencia supera la tensión de entrada disminuye la corriente de referencia.
 		
 		
 	\section{Circuito III: Rectificador de precisión}
-	En esta sección se analiza el siguiente circuito
+	En esta sección se analiza el siguiente circuito:
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito3_esquematico}
 		\caption{Rectificador de precisión}
 		\label{fig:circuito3esquematico}
 	\end{figure}
+	El circuito que has presentado es un rectificador de precisión utilizando amplificadores operacionales. Este tipo de circuitos son muy comunes en electrónica analógica y se utilizan para convertir señales de CA a señales de CC unidireccionales, pero con una precisión mucho mayor que los rectificadores de diodo tradicionales.
 		
 	Hacemos un primer análisis para $V_{IN}>0$, por lo que el diodo $D_1$
-	esta polarizado inversamente (circuito abierto) y $D2$ en forma directa. La salida en 
-	función de la tensión de entrada $VIN$ resulta:
-	
+	esta polarizado inversamente (circuito abierto) y $D2$ en forma directa(circuito cerrado).Obtenemos la expresión $V_{01}=f(V_{IN})$.Para este caso $Rf=0$, por lo tanto el primer operacional queda como un seguidor de tensión.
 	\begin{equation}
-		\frac{\mathrm{V_{OUT}}}{\mathrm{V_{IN}}}=\frac{5\,\mathrm{V_{IN}}}{3}
+		V_{01}=V_{IN}
 	\end{equation}
 	
-	La salida en función de la tensión de salida del primer operacional $VOUT_1$ resulta:
-	
+	Obtenemos la expresión  $V_{02}=f(V_{IN})$.Para este caso resulta un amplificador no inversor.
 	\begin{equation}
-		\frac{\mathrm{VOUT}}{{\textrm{VOUT}}_1 }=-\frac{2\,{\textrm{VOUT}}_1 }{3}
+		V_{02}=V_{IN}1(\frac{-R4}{R1+R2})+(1+\frac{R4}{R2+R1})V_{IN}=\frac{-2}{3}V_{IN}+\frac{5}{3}V_{IN}=V_{IN}
 	\end{equation}
 	
-	Sumando ambos efectos tenemos la salida total del sistema para la primer condición
+		
+	Para un segundo análisis proponemos que la tensión de entrada es $V_{IN}<0$ por lo tanto $D_1$ esta polarizado en directa(circuito cerrado) y $D_2$ en forma inversa (circuito abierto). Obtenemos la expresión $V_{01}=f(V_{IN})$, resulta un amplificador no inversor:
 	\begin{equation}
-		{VOUT}=\frac{5\,\mathrm{VIN}}{3}-\frac{2\,{\textrm{VOUT}}_1 }{3}
+		V_{01}=(1+\frac{R1}{R3})V_{IN}=2V_{IN}
 	\end{equation}
+	
+	Obtenemos la expresión  $V_{02}=f(V_{IN})$.Para este caso resulta un amplificador no inversor.
+	\begin{equation}
+		V_{02}=(1+\frac{R1}{R3})V_{IN}\frac{-R4}{R2}+(1+\frac{R4}{R2})V_{IN}=-4V_{IN}+3V_{IN}=-V_{IN}
+	\end{equation}
+	
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{Simulaciones-Resultados/Circuito3_Vo1(Vin)-Vo2(Vin)}
+		\caption[Salida de la onda rectificada]{Salida de la onda rectificada}
+		\label{fig:circuito3vo1vin-vo2vin}
+	\end{figure}
 	
 	\section{Circuito IV: Comparador con histéresis}
 	Ahora, pasaremos a analizar el siguiente circuito:
-	\begin{figure}[h]
+	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito4_esquematico}
-		\caption{Comparador con histeresis}
+		\caption{Comparador con histéresis}
 		\label{fig:circuito4esquematico}
 	\end{figure}
-
-	Hacemos un analisis por superposicion, cortamos por voltaje en la salida $V_{o}$ antes de $R_{4}$, y arrancamos analizando $V_{o}$ 			con $V_{in} = 0$ y $V_{ref} = 0$, obteniendo:
- 	
+	Un comparador convencional simplemente compara dos voltajes de entrada y produce una salida alta o baja dependiendo de cuál sea mayor. Sin embargo, un comparador con histéresis introduce una especie de memoria en el circuito. Esto significa que una vez que la salida cambia de estado, se requiere un cambio más grande en la señal de entrada para que vuelva a cambiar. Esta característica es útil en muchas aplicaciones, como la detección de niveles, control de motores y circuitos de disparo.
+	
+	Analizamos por blackman y por superposición, cortamos por voltaje en la salida $V_{OUT}$ antes de $R4$, y arrancamos analizando $V_{OUT}$ con $V_{IN} = 0$ y $V_{REF} = 0$, obteniendo:
 	\begin{equation}
-		V_{o} = \frac{1}{6} A_{d} V'_{o}
+		V_{o} = \frac{1}{6} A_{d} V'_{OUT}
 	\end{equation}
 	
-	luego hacemos $V_{o}$ para $V'_{o} = 0$ y $V_{ref} = 0$, y obtenemos:
-
+	Luego hacemos $V_{OUT}$ para $V'_{OUT} = 0$ y $V_{REF} = 0$, y obtenemos:
 	\begin{equation}
-		V_{o} = -\frac{1}{2} A_{d} V_{in}
+		V_{OUT} = -\frac{1}{2} A_{d} V_{IN}
 	\end{equation}
 
-	por ultimo haremos $V_{o}$ para $V'_{in} = 0$ y $V'_{o} = 0$, que nos da:
-
+	Por ultimo haremos $V_{OUT}$ para $V'_{IN} = 0$ y $V'_{OUT} = 0$, que nos da:
 	\begin{equation}
-		V_{o} = \frac{5}{6} A_{d} V_{ref}
+		V_{OUT} = \frac{5}{6} A_{d} V_{REF}
 	\end{equation}
 
-	si hacemos $V'_{o} = V_{o}$ y despejando obtenemos:
+	Si hacemos $V'_{OUT} = V_{OUT}$ y despejando obtenemos:
 
 	\begin{equation}
-		V_{o} = \frac{A_{d} \frac{1}{6} (5 V_{ref} - 3 V_{in})}{1 - \frac{1}{6} A_{d}} = - (5 V_{ref} - 3V_{in})
+		V_{OUT} = \frac{A_{d} \frac{1}{6} (5 V_{REF} - 3 V_{IN})}{1 - \frac{1}{6} A_{d}} = - (5 V_{REF} - 3V_{IN})
 	\end{equation}
-
+	
+	\begin{figure}[]
+		\includegraphics[width=1\linewidth]{Simulaciones-Resultados/Circuito4_Vo(Vi)}
+		\caption[Salida del circuito]{Salida del circuito}
+		\label{fig:circuito4vovi}
+	\end{figure}
+	En un amplificador operacional real, la impedancia de entrada es muy alta pero finita. En este circuito, la mayor parte de la corriente de entrada fluirá a través de $R1$ y $R2$. Por lo tanto, podemos aproximar la impedancia de entrada como la resistencia en paralelo de $R1$ y $R2$.
+	
+	\begin{equation}
+		Z_{IN}=R1//R2=5[Kohm]
+	\end{equation}
 
 
 \end{document}

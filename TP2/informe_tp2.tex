@@ -43,6 +43,7 @@
 	\begin{equation}
 		V_{o}=\frac{-Rf}{R}(V_{1}+V_{2})
 	\end{equation}
+	
 	Para obtener una ganancia aproximada de 30 veces seleccionamos las resistencias de valores comerciales con los siguientes valores $Rf=1[Mohm]$ y $R=33[Kohm]$
 	
 	\begin{figure}[h]
@@ -149,6 +150,23 @@
 		\label{fig:simslowrate}
 	\end{figure}
 	
+	\subsection{Tabla de error normalizado}
+	El Error Vectorial Normalizado (EVN), también conocido como Normalized Error Vector (NEV) en inglés, es una medida utilizada en la caracterización de amplificadores operacionales (op-amps) para evaluar su desempeño en términos de precisión y linealidad. Es una forma de cuantificar la desviación de la salida real del op-amp con respecto a la salida ideal para una determinada condición de operación.Para el calculo de dicho error, utilizamos el siguiente script de matlab:
+	
+	\begin{figure}[h!]
+		\includegraphics[width=1\linewidth]{Imagenes_simulaciones/error_vectorial_norm}
+		\caption[Script para calcular el EVN]{Script para calcular el EVN}
+		\label{fig:errorvectorialnorm}
+		
+	\end{figure}
+	La salida por la consola resulta:
+	\begin{figure}[h!]
+		\includegraphics[width=0.5\linewidth]{Imagenes_simulaciones/error_vectorial_norm_tabla}
+		\caption[Tabla de error]{Tabla de error}
+		\label{fig:errorvectorialnormtabla}
+	\end{figure}
+	
+	
 	\section{Circuito II: Amplificadores en cascada con puente de  Wheatstone }
 	En este circuito tenemos un puente de Wheastone que produce una tensión diferencial, esta se amplifica mediante dos etapas, una no inversora (primera) y otra no inversora (segunda).
 	
@@ -240,13 +258,20 @@
 		\label{fig:simerrordcc2}
 	\end{figure}
 	
-	El error total en continua resulta: $46.6[mV]$, calculamos la resolución en bits para el ADC:
+	Error en relación de rechazo en modo común no infinita (solo para el segundo operacional):
+	\begin{equation}
+		\bigtriangleup V = \frac{(\frac{Vc}{RRMC})}{\frac{R2}{aR2}}
+	\end{equation}
+	
+	La relación de rechazo en modo común para el LM324 es de $70[dB]$ error resultante es de $33.7[mV]$ 
+	
+	El error total en continua resulta: $80.3[mV]$, calculamos la resolución en bits para el ADC:
 	\begin{equation}
 		\bigtriangleup V <= \frac{FE}{2^n}
 	\end{equation}
 	
 	\begin{equation}
-		n = \log(\frac{FS}{\bigtriangleup V}) = 6.74 bits
+		n = \log(\frac{FS}{\bigtriangleup V}) = 6bits
 	\end{equation}
 	
 \end{document}
