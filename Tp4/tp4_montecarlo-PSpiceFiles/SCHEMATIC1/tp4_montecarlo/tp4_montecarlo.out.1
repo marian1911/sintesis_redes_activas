@@ -1,0 +1,56 @@
+
+**** 11/28/24 20:20:08 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tp4_montecarlo"  [ D:\GD\Sintesis de redes activas\sintesis_redes_activas\Tp4\tp4_montecarlo-PSpiceFiles\SCH
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tp4_montecarlo.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\maria\AppData\Roaming\SBP_23.1\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 20 0 1meg
+-----------$
+ERROR(ORPSIM-16103): Invalid value
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TP4_MONTECARLO
+X_U1A         N00407 N00733 N00201 N00215 N00733 LM324
+X_U1B         N01000 OUT N00201 N00215 OUT LM324
+V_V1         N00201 0 10V
+V_V2         0 N00215 10V
+R_R1         N00800 N00407  10k TC=0,0 
+R_R2         N00415 N00800  10k TC=0,0 
+R_R3         0 N00415  500 TC=0,0 
+R_R4         N00415 IN  1500 TC=0,0 
+V_V3         IN 0  AC 1
++SIN 0 100mV 1k 0 0 0
+C_C1         0 N00407  2.4n  TC=0,0 
+C_C2         N00800 N00733  62.8n  TC=0,0 
+C_C3         N00733 N00996  100n  TC=0,0 
+C_C4         N00996 N01000  100n  TC=0,0 
+R_R5         0 N01000  10550 TC=0,0 
+R_R6         N00996 OUT  403 TC=0,0 
+R_R7         0 OUT  1k TC=0,0 
+
+**** RESUMING tp4_montecarlo.cir ****
+.END
+

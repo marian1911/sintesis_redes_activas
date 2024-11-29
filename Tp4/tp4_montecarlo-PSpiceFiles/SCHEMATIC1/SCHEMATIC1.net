@@ -1,0 +1,29 @@
+* source TP4_MONTECARLO
+X_U1A         N00407 N00733 N00201 N00215 N00733 LM324
+X_U1B         N01000 OUT N00201 N00215 OUT LM324
+V_V1         N00201 0 10V
+V_V2         0 N00215 10V
+R_R1         N00800 N00407 R_R1 10k TC=0,0 
+.model        R_R1 RES R=1 DEV=10% TC1=0 TC2=0
+R_R2         N00415 N00800 R_R2 10k TC=0,0 
+.model        R_R2 RES R=1 DEV=10% TC1=0 TC2=0
+R_R3         0 N00415 R_R3 500 TC=0,0 
+.model        R_R3 RES R=1 DEV=10% TC1=0 TC2=0
+R_R4         N00415 IN R_R4 1500 TC=0,0 
+.model        R_R4 RES R=1 DEV=10% TC1=0 TC2=0
+V_V3         IN 0  AC 1
++SIN 0 100mV 1k 0 0 0
+C_C1         0 N00407 C_C1 2.4n  TC=0,0 
+.model        C_C1 CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+C_C2         N00800 N00733 C_C2 62.8n  TC=0,0 
+.model        C_C2 CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+C_C3         N00733 N00996 C_C3 100n  TC=0,0 
+.model        C_C3 CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+C_C4         N00996 N01000 C_C4 100n  TC=0,0 
+.model        C_C4 CAP C=1 DEV=10% TC1=0 TC2=0 VC1=0 VC2=0
+R_R5         0 N01000 R_R5 10550 TC=0,0 
+.model        R_R5 RES R=1 DEV=10% TC1=0 TC2=0
+R_R6         N00996 OUT R_R6 403 TC=0,0 
+.model        R_R6 RES R=1 DEV=10% TC1=0 TC2=0
+R_R7         0 OUT R_R7 1k TC=0,0 
+.model        R_R7 RES R=1 DEV=0% TC1=0 TC2=0
