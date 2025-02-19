@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  28 NOV 2024 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  18 FEB 2025 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -196,6 +196,10 @@ png)
 Package pdftex.def Info: Simulaciones_Imagenes/funciones de transferencias.png 
  used on input line 113.
 (pdftex.def)             Requested size: 390.0pt x 190.71568pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <Simulaciones_Imagenes/Bode_TFs_Matlab.png, id=18, 958.782pt x 504.08325pt>
 File: Simulaciones_Imagenes/Bode_TFs_Matlab.png Graphic file (type png)
 <use Simulaciones_Imagenes/Bode_TFs_Matlab.png>
@@ -203,18 +207,17 @@ Package pdftex.def Info: Simulaciones_Imagenes/Bode_TFs_Matlab.png  used on inp
 ut line 119.
 (pdftex.def)             Requested size: 390.0pt x 205.04483pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./Simulaciones_Imagenes/funciones de transferencias.png>] [4 <./Simulacione
-s_Imagenes/Bode_TFs_Matlab.png>]
+[3] [4 <./Simulaciones_Imagenes/funciones de transferencias.png> <./Simulacione
+s_Imagenes/Bode_TFs_Matlab.png>] [5]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 167.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 167.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 167.
-<Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png, id=27, 879.285pt x 296
+<Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png, id=30, 879.285pt x 296
 .307pt>
 File: Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png Graphic file (type
  png)
@@ -222,46 +225,43 @@ File: Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png Graphic file (type
 Package pdftex.def Info: Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png
   used on input line 172.
 (pdftex.def)             Requested size: 390.0pt x 131.42441pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Simulaciones_Imagenes/Sim_AC_Filtro.png, id=28, 1154.51324pt x 509.5035pt>
+<Simulaciones_Imagenes/Sim_AC_Filtro.png, id=31, 1154.51324pt x 509.5035pt>
 File: Simulaciones_Imagenes/Sim_AC_Filtro.png Graphic file (type png)
 <use Simulaciones_Imagenes/Sim_AC_Filtro.png>
 Package pdftex.def Info: Simulaciones_Imagenes/Sim_AC_Filtro.png  used on input
  line 179.
 (pdftex.def)             Requested size: 390.0pt x 172.10938pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6 <./Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png> <./Simulacion
-es_Imagenes/Sim_AC_Filtro.png>] [7]
-<Simulaciones_Imagenes/Sensitividad.png, id=44, 458.46281pt x 273.27094pt>
+[6 <./Simulaciones_Imagenes/Circ_Filtro_VerdeFpb_RojoFpa.png>] [7 <./Simulacion
+es_Imagenes/Sim_AC_Filtro.png>] [8]
+<Simulaciones_Imagenes/Sensitividad.png, id=47, 458.46281pt x 273.27094pt>
 File: Simulaciones_Imagenes/Sensitividad.png Graphic file (type png)
 <use Simulaciones_Imagenes/Sensitividad.png>
 Package pdftex.def Info: Simulaciones_Imagenes/Sensitividad.png  used on input 
 line 259.
 (pdftex.def)             Requested size: 390.0pt x 232.47318pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9 <./Simulaciones_Imagenes/Sensitividad.png>] [10]
+ [9 <./Simulaciones_Imagenes/Sensitividad.png>] [10]
 <Simulaciones_Imagenes/Sensitividad_2.png, id=55, 417.81094pt x 297.36093pt>
 File: Simulaciones_Imagenes/Sensitividad_2.png Graphic file (type png)
 <use Simulaciones_Imagenes/Sensitividad_2.png>
 Package pdftex.def Info: Simulaciones_Imagenes/Sensitividad_2.png  used on inpu
 t line 341.
 (pdftex.def)             Requested size: 390.0pt x 277.5864pt.
- [11 <./Simulaciones_Imagenes/Sensitividad_2.png>]
-<Simulaciones_Imagenes/monte_carlo_1.png, id=60, 931.98187pt x 587.19376pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11]
+<Simulaciones_Imagenes/monte_carlo_1.png, id=59, 931.98187pt x 587.19376pt>
 File: Simulaciones_Imagenes/monte_carlo_1.png Graphic file (type png)
 <use Simulaciones_Imagenes/monte_carlo_1.png>
 Package pdftex.def Info: Simulaciones_Imagenes/monte_carlo_1.png  used on input
  line 352.
 (pdftex.def)             Requested size: 390.0pt x 245.71475pt.
-<Simulaciones_Imagenes/banda_de_paso_montecarlo.png, id=61, 929.72343pt x 585.6
+<Simulaciones_Imagenes/banda_de_paso_montecarlo.png, id=60, 929.72343pt x 585.6
 8813pt>
 File: Simulaciones_Imagenes/banda_de_paso_montecarlo.png Graphic file (type png
 )
@@ -273,7 +273,7 @@ ed on input line 360.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Simulaciones_Imagenes/peor_de_los_casos.png, id=62, 926.71219pt x 584.93532pt>
+<Simulaciones_Imagenes/peor_de_los_casos.png, id=61, 926.71219pt x 584.93532pt>
 
 File: Simulaciones_Imagenes/peor_de_los_casos.png Graphic file (type png)
 <use Simulaciones_Imagenes/peor_de_los_casos.png>
@@ -283,9 +283,9 @@ nput line 366.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./Simulaciones_Imagenes/monte_carlo_1.png>] [13 <./Simulaciones_Imagenes/b
-anda_de_paso_montecarlo.png>] [14 <./Simulaciones_Imagenes/peor_de_los_casos.pn
-g>] (informe_tp4.aux
+[12 <./Simulaciones_Imagenes/Sensitividad_2.png>] [13 <./Simulaciones_Imagenes/
+monte_carlo_1.png>] [14 <./Simulaciones_Imagenes/banda_de_paso_montecarlo.png>]
+[15 <./Simulaciones_Imagenes/peor_de_los_casos.png>] (informe_tp4.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -297,11 +297,11 @@ L3 programming layer <2024-01-04>
 Here is how much of TeX's memory you used:
  5078 strings out of 474486
  81171 string characters out of 5753570
- 2278542 words of memory out of 5000000
+ 2335542 words of memory out of 5000000
  27356 multiletter control sequences out of 15000+600000
  564216 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,653b,1605s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,653b,1603s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 2074.pk><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/
 Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Latex/Progra
@@ -312,9 +312,9 @@ m/cmr12.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><
 D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Latex/Progr
 ama latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/Programa latex/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe_tp4.pdf (14 pages, 558225 bytes).
+Output written on informe_tp4.pdf (15 pages, 557839 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

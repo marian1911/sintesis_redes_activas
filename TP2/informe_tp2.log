@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  26 NOV 2024 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.11)  18 FEB 2025 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,39 +137,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 12.
+ [1
+
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 21.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 23.
-
-<Imagenes_simulaciones/Esquematico_Circ1.png, id=1, 962.3955pt x 419.76825pt>
+<Imagenes_simulaciones/Esquematico_Circ1.png, id=10, 962.3955pt x 419.76825pt>
 File: Imagenes_simulaciones/Esquematico_Circ1.png Graphic file (type png)
 <use Imagenes_simulaciones/Esquematico_Circ1.png>
 Package pdftex.def Info: Imagenes_simulaciones/Esquematico_Circ1.png  used on i
 nput line 24.
 (pdftex.def)             Requested size: 390.0pt x 170.10768pt.
-[1
-
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Imagenes_simulaciones/Sim_V1_0.1__V2_0.02.png, id=17, 1154.51324pt x 509.5035p
+ [2 <./Imagenes_simulaciones/Esquematico_Circ1.png>]
+<Imagenes_simulaciones/Sim_V1_0.1__V2_0.02.png, id=21, 1154.51324pt x 509.5035p
 t>
 File: Imagenes_simulaciones/Sim_V1_0.1__V2_0.02.png Graphic file (type png)
 <use Imagenes_simulaciones/Sim_V1_0.1__V2_0.02.png>
 Package pdftex.def Info: Imagenes_simulaciones/Sim_V1_0.1__V2_0.02.png  used on
  input line 50.
 (pdftex.def)             Requested size: 390.0pt x 172.10938pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./Imagenes_simulaciones/Esquematico_Circ1.png>] [3 <./Imagenes_simulaciones
-/Sim_V1_0.1__V2_0.02.png>]
+ [3 <./Imagenes_simulaciones/Sim_V1_0.1__V2_0.02.png>]
 <Imagenes_simulaciones/Sim_Error_DC.png, id=26, 1154.51324pt x 510.10574pt>
 File: Imagenes_simulaciones/Sim_Error_DC.png Graphic file (type png)
 <use Imagenes_simulaciones/Sim_Error_DC.png>
@@ -177,31 +168,24 @@ Package pdftex.def Info: Imagenes_simulaciones/Sim_Error_DC.png  used on input
 line 121.
 (pdftex.def)             Requested size: 390.0pt x 172.31282pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Imagenes_simulaciones/Sim_Bode_3db_marcados.png, id=27, 1154.51324pt x 510.105
+[4]
+<Imagenes_simulaciones/Sim_Bode_3db_marcados.png, id=30, 1154.51324pt x 510.105
 74pt>
 File: Imagenes_simulaciones/Sim_Bode_3db_marcados.png Graphic file (type png)
 <use Imagenes_simulaciones/Sim_Bode_3db_marcados.png>
 Package pdftex.def Info: Imagenes_simulaciones/Sim_Bode_3db_marcados.png  used 
 on input line 135.
 (pdftex.def)             Requested size: 390.0pt x 172.31282pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Imagenes_simulaciones/Sim_slow_rate.png, id=28, 1153.911pt x 509.5035pt>
+ [5 <./Imagenes_simulaciones/Sim_Error_DC.png> <./Imagenes_simulaciones/Sim_Bod
+e_3db_marcados.png>]
+<Imagenes_simulaciones/Sim_slow_rate.png, id=36, 1153.911pt x 509.5035pt>
 File: Imagenes_simulaciones/Sim_slow_rate.png Graphic file (type png)
 <use Imagenes_simulaciones/Sim_slow_rate.png>
 Package pdftex.def Info: Imagenes_simulaciones/Sim_slow_rate.png  used on input
  line 148.
 (pdftex.def)             Requested size: 390.0pt x 172.20267pt.
-[4]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <./Imagenes_simulaciones/Sim_Error_DC.png> <./Imagenes_simulaciones/Sim_Bode
-_3db_marcados.png>]
 <Imagenes_simulaciones/error_vectorial_norm.png, id=37, 680.5425pt x 260.47313p
 t>
 File: Imagenes_simulaciones/error_vectorial_norm.png Graphic file (type png)
@@ -209,6 +193,10 @@ File: Imagenes_simulaciones/error_vectorial_norm.png Graphic file (type png)
 Package pdftex.def Info: Imagenes_simulaciones/error_vectorial_norm.png  used o
 n input line 157.
 (pdftex.def)             Requested size: 390.0pt x 149.2701pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <Imagenes_simulaciones/error_vectorial_norm_tabla.png, id=38, 249.93375pt x 182
 .18062pt>
 File: Imagenes_simulaciones/error_vectorial_norm_tabla.png Graphic file (type p
@@ -218,26 +206,25 @@ Package pdftex.def Info: Imagenes_simulaciones/error_vectorial_norm_tabla.png
 used on input line 164.
 (pdftex.def)             Requested size: 195.0pt x 142.14478pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <./Imagenes_simulaciones/Sim_slow_rate.png> <./Imagenes_simulaciones/error_v
-ectorial_norm.png>]
-<Imagenes_simulaciones/Sim_Ganancia_C2.png, id=44, 1154.51324pt x 510.708pt>
+[6 <./Imagenes_simulaciones/Sim_slow_rate.png>] [7 <./Imagenes_simulaciones/err
+or_vectorial_norm.png> <./Imagenes_simulaciones/error_vectorial_norm_tabla.png>
+]
+<Imagenes_simulaciones/Sim_Ganancia_C2.png, id=49, 1154.51324pt x 510.708pt>
 File: Imagenes_simulaciones/Sim_Ganancia_C2.png Graphic file (type png)
 <use Imagenes_simulaciones/Sim_Ganancia_C2.png>
 Package pdftex.def Info: Imagenes_simulaciones/Sim_Ganancia_C2.png  used on inp
 ut line 190.
 (pdftex.def)             Requested size: 390.0pt x 172.51625pt.
- [7 <./Imagenes_simulaciones/error_vectorial_norm_tabla.png>] [8 <./Imagenes_si
-mulaciones/Sim_Ganancia_C2.png>]
-<Imagenes_simulaciones/Sim_Error_DC_C2.png, id=54, 1152.10425pt x 509.5035pt>
+ [8 <./Imagenes_simulaciones/Sim_Ganancia_C2.png>] [9]
+<Imagenes_simulaciones/Sim_Error_DC_C2.png, id=57, 1152.10425pt x 509.5035pt>
 File: Imagenes_simulaciones/Sim_Error_DC_C2.png Graphic file (type png)
 <use Imagenes_simulaciones/Sim_Error_DC_C2.png>
 Package pdftex.def Info: Imagenes_simulaciones/Sim_Error_DC_C2.png  used on inp
 ut line 256.
 (pdftex.def)             Requested size: 390.0pt x 172.467pt.
- [9] [10 <./Imagenes_simulaciones/Sim_Error_DC_C2.png>] (informe_tp2.aux
+ [10 <./Imagenes_simulaciones/Sim_Error_DC_C2.png>] (informe_tp2.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -263,7 +250,7 @@ ic/amsfonts/cm/cmr10.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/c
 m/cmr12.pfb><D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><
 D:/Latex/Programa latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Latex/Progr
 ama latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on informe_tp2.pdf (10 pages, 387558 bytes).
+Output written on informe_tp2.pdf (10 pages, 387344 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -15,12 +15,12 @@
 		Introducir al estudiante en el diseño, armado, medición y análisis de circuitos amplificadores
 		lineales, teniendo en cuenta las fuentes de error del AO real, y como se relacionan con las
 		condiciones de entorno del circuito.
-	\end{abstract}
+	\end{abstract}\newpage
 	
 	\section{Circuito I: Sumador inversor}
 		En esta sección se diseña un amplificador operacional (LM741 o LM324) en configuración sumador inversor, alimentado con $Vcc=10[V]$, la ganancia en la banda media debe ser de 30 veces, la impedancia de entrada no debe cargar la fuente de señal:
 		
-	\begin{figure}[]
+	\begin{figure}[h]
 		\includegraphics[width=\linewidth]{Imagenes_simulaciones/Esquematico_Circ1}
 		\caption[Esquemático del circuito]{Esquemático del circuito}
 		\label{fig:esquematicocirc1}
@@ -133,7 +133,7 @@
 	
 	\begin{figure}[h!]
 		\includegraphics[width=\linewidth]{Imagenes_simulaciones/Sim_Bode_3db_marcados}
-		\caption[Ancho de banda de baja señal]{Ancho de banda de baja señal}
+		\caption[Ancho de banda de baja señal]{Ancho de banda}
 		\label{fig:simbode3dbmarcados}
 	\end{figure}
 
@@ -252,7 +252,7 @@
 		\bigtriangleup V = \frac{FS}{|T2|}=1.068[mV]
 	\end{equation}
 	
-	\begin{figure}
+	\begin{figure}[b!]
 		\includegraphics[width=\linewidth]{Imagenes_simulaciones/Sim_Error_DC_C2}
 		\caption[Error en DC]{Error en DC}
 		\label{fig:simerrordcc2}
